@@ -1,0 +1,20 @@
+Day1:
+In github, we had to create a new repo with a readme and a short description,
+after that lets open the bash terminal and use:
+-git init 
+-git clone https://github.com/matiasecharri/Coffee-Oasis.git
+Then we had the repo cloned in our pc.
+
+After that we are going to create the index.html and add the "assets" folder for the images and the "style.css"
+
+Now, we are going to push all of this new changes to github. 
+
+Lets create a new branch: 
+git branch nameofthenewbranch 
+And lets move to this new branch: 
+git checkout nameofthenewbranch
+git add . (if you want to add all the changes)
+git commit -m "a description of what you do" 
+git push origin nameofthenewbranch
+
+Now lets change the Document name, link bootrstrap and create the nav.
