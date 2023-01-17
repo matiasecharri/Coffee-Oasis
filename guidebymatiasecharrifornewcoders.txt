@@ -1,0 +1,4 @@
+Fuimos a github, creamos el repositorio con un readme y descripción, luego abriendo la terminal pasamos a hacer:
+-git init (en caso de que sea necesario) 
+-git clone https://github.com/matiasecharri/Coffee-Oasis.git
+Ahi ya tendriamos el repo copiado.
