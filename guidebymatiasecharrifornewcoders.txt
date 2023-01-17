@@ -17,3 +17,4 @@ git add . (if you want to add all the changes)
 git commit -m "a description of what you do" 
 git push origin nameofthenewbranch
 
+Now lets change the Document name, link bootrstrap and create the nav.
