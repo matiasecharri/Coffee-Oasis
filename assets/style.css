@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.colormain{
+    background-color: rgba(64, 148, 53, 0.884);
+}
