@@ -1,2 +1,4 @@
 # Coffee-Oasis
-An e-commerce about coffe and sweet things, made of vanilla Javascript and Bootstrap.
+An e-commerce about sushi delivery food.
+Made with basic things like: html5, css3, javascript vanilla and
+bootstrap.
