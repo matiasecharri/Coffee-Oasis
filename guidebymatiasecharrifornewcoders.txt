@@ -18,3 +18,7 @@ git commit -m "a description of what you do"
 git push origin nameofthenewbranch
 
 Now lets change the Document name, link bootrstrap and create the nav.
+
+Day2: This day was about finding a beautiful aestethic for the website. I like this actual version, but is pretty improveable.
+I adopted a vertical nav made of icons, im thinking about a horizontal scroll
+website, but probably i will do that with react in my next project.
