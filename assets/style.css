@@ -67,6 +67,14 @@ flex-direction: column;
   justify-content: center;
 }
 
+.conticon:hover {
+    border: 1px solid rgba(146, 142, 142, 0.144);
+  }
+
+  .active:hover {
+    border: 0px solid white;
+  }
+
 @media only screen and (max-width: 720px) {
   nav {
     height: 100%;
@@ -84,13 +92,7 @@ flex-direction: column;
     letter-spacing: 10px;
   }
 
-  .conticon:hover {
-    border: 1px solid rgba(146, 142, 142, 0.144);
-  }
-
-  .active:hover {
-    border: 0px solid white;
-  }
+  
 }
 main {
     background-color: rgb(197, 21, 44);
@@ -121,7 +123,7 @@ main {
  background-position: 6%;
  box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
  filter: brightness(80%);
- border-radius: 10px 0px 0px 10px;
+ border-radius: 8px 0px 0px 8px;
 }
 .photo2 {
   width: 20%;
@@ -208,4 +210,20 @@ h1 span{
 -webkit-backdrop-filter: blur(8.6px);
 box-shadow: rgba(33, 33, 34, 0) 0px 20px 30px -10px;
     
+}
+
+.thedoubletext{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.thedoubletext h3 {
+    color: aliceblue;
+   
+   letter-spacing: 10px;
+   margin-left: 80px;
+   font-size: 15px;
 }
