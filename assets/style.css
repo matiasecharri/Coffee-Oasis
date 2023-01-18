@@ -76,7 +76,7 @@ flex-direction: column;
   }
 
 
-main {
+header {
     background-color: rgb(197, 21, 44);
 
   display: flex;
@@ -187,10 +187,10 @@ h1 span{
 .arriba3{
     width: 88%;
     border-radius: 0px 10px 0px 0px;
-    background-color: rgba(129, 129, 129, 0.329);
-    backdrop-filter: blur(8.6px);
+    background-color: rgba(27, 23, 23, 0.432);
+    backdrop-filter: blur(3.6px);
 -webkit-backdrop-filter: blur(8.6px);
-box-shadow: rgba(33, 33, 34, 0) 0px 20px 30px -10px;
+box-shadow: rgba(23, 23, 26, 0.342) 0px 20px 30px -10px;
     
 }
 
@@ -210,7 +210,66 @@ box-shadow: rgba(33, 33, 34, 0) 0px 20px 30px -10px;
    font-size: 15px;
 }
 
+.sakuraflower {
+  position: absolute;
+  top: 50px;
+  left: 1000px;
 
+}
+@media only screen and (min-width: 3000px) {
+  .sakuraflower {
+    position: absolute;
+    position: fixed;
+    top: 40px;
+    left: 1800px;}
+   }
+  
+@media only screen and (max-width: 1650px) {
+.sakuraflower {
+  position: absolute;
+  position: fixed;
+  top: 40px;
+  left: 780px;}
+ }
+
+ @media only screen and (max-width: 1555px) {
+  .sakuraflower {
+    position: absolute;
+    top: 40px;
+    left: 670px;}
+   }
+
+   @media only screen and (max-width: 1447px) {
+    .sakuraflower {
+      position: absolute;
+      top: 10px;
+      left: 550px;}
+     }
+
+     @media only screen and (max-width: 1317px) {
+      .sakuraflower {
+        position: absolute;
+        top: 10px;
+        left: 400px;}
+       }
+       @media only screen and (max-width: 1180px) {
+        h1,h3{
+          z-index: 100;
+        }
+        .sakuraflower {
+         left: 580px;
+         z-index: 0;
+         height: 300px;
+         }
+        }
+        @media only screen and (max-width: 951px) {
+          h1,h3{
+            z-index: 100;
+          }
+          .sakuraflower {
+          display: none;
+           }
+          }
 
 /* //MEDIAQUERIES//--------------------------------------------------------- */
 
