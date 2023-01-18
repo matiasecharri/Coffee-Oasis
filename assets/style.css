@@ -163,7 +163,7 @@ h1 span{
     background-color: rgb(255, 255, 255);
     background-position: 50% 0px;
     background-repeat: no-repeat;
-    box-shadow: rgb(49, 50, 51) 0px 20px 30px -10px;
+    box-shadow: rgba(33, 33, 34, 0.452) 0px 20px 30px -10px;
     border-radius: 0px 0px 11px 0px;
   
 }
@@ -173,7 +173,7 @@ h1 span{
     height: 35%;
     background-color: rgb(238, 238, 238);
     background-size: cover;
-    box-shadow: rgb(41, 43, 44) 0px 20px 30px -10px;
+    box-shadow: rgba(33, 33, 34, 0.452) 0px 20px 30px -10px;
     border-radius: 0px 0px 11px 0px;;
   
 }
@@ -182,7 +182,30 @@ h1 span{
     width: 95%;
     height: 50%;
     background-color: rgb(234, 234, 235);
-    box-shadow: rgb(55, 55, 56) 0px 11px 30px -10px;
+    box-shadow: rgba(33, 33, 34, 0.452) 0px 20px 30px -10px;
     
+    
+}
+
+.arriba1{
+    width: 40%;
+    border-radius: 0px 10px 0px 0px;
+  
+}
+
+
+.arriba2{
+    width: 70%;
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+.arriba3{
+    width: 88%;
+    border-radius: 0px 10px 0px 0px;
+    background-color: rgba(129, 129, 129, 0.329);
+    backdrop-filter: blur(8.6px);
+-webkit-backdrop-filter: blur(8.6px);
+box-shadow: rgba(33, 33, 34, 0) 0px 20px 30px -10px;
     
 }
