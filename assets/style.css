@@ -108,6 +108,7 @@ header {
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
   border-radius: 8px 0px 0px 8px;
+  
 }
 .photo2 {
   width: 20%;
@@ -213,6 +214,7 @@ h1 span {
     top: 40px;
     left: 1800px;
   }
+ 
 }
 
 @media only screen and (max-width: 1650px) {
@@ -459,11 +461,137 @@ border-top: 2px rgb(197, 21, 44)solid;
 }
 
 .fishes{
-  width: 130px;
-  height: 130px;
-  margin-top: 80px;
+  width: 142px;
+  height: 142px;
+  
   border-radius: 180px;
   background-size: cover;
   background-position: 5%;
   background-image: url(./images/Koi\ Fish\ Pond.gif);
+  position: absolute;
+  bottom: 156px;
+  left: 170px;
+  filter: hue-rotate(100deg);
+  opacity: 0.7;
+ 
 }
+
+.posicionando{
+  
+  display: flex;
+  justify-content: end;
+  width: 480px;
+  height: 458px;
+  align-items: center;
+  justify-content: center;
+ 
+  position: relative;
+ 
+}
+
+
+
+@media only screen and (max-width: 1650px) {
+  .fishes{
+    width: 140px;
+    height: 140px;
+    
+    border-radius: 180px;
+    background-size: cover;
+    background-position: 5%;
+    background-image: url(./images/Koi\ Fish\ Pond.gif);
+    position: absolute;
+    bottom: 180px;
+    left: 142px;
+   
+  }
+  
+  .posicionando{
+    
+    display: flex;
+    justify-content: end;
+    width: 480px;
+    height: 458px;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+  }
+}
+
+
+@media only screen and (max-width: 1523px) {
+  .fishes{
+    width: 140px;
+    height: 140px;
+    
+    border-radius: 180px;
+    background-size: cover;
+    background-position: 5%;
+    background-image: url(./images/Koi\ Fish\ Pond.gif);
+    position: absolute;
+    bottom: 184px;
+    left: 135px;
+   
+  }
+  
+  .posicionando{
+    
+    display: flex;
+    justify-content: end;
+    width: 480px;
+    height: 458px;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1150px) {
+  .fishes{
+   display: none;
+   
+  }
+  
+  .posicionando{
+    
+   display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .fishes{
+    display: none;
+   
+  }
+  
+  .posicionando{
+    
+   display: none;
+  }
+}
+
+
+@media only screen and (min-width: 3000px) {
+  .fishes{
+    width: 140px;
+    height: 140px;
+    
+    border-radius: 180px;
+    background-size: cover;
+    background-position: 5%;
+    background-image: url(./images/Koi\ Fish\ Pond.gif);
+    position: absolute;
+    bottom: 174px;
+    left: 160px;
+   
+  }
+  
+ 
+}
+
