@@ -22,3 +22,7 @@ Now lets change the Document name, link bootrstrap and create the nav.
 Day2: This day was about finding a beautiful aestethic for the website. I like this actual version, but is pretty improveable.
 I adopted a vertical nav made of icons, im thinking about a horizontal scroll
 website, but probably i will do that with react in my next project.
+
+Day3: First of all we are going to add some mediaqueries to the main page.
+
+14:36 All mediaqueries added to the main page, think im gonna start with the shop section. 
