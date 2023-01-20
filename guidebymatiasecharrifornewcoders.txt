@@ -33,3 +33,5 @@ for screen2 are finished too.
 
 I want to add a "writting effect" in the screen2, and a gallery updown to screen3, after
 that is just footer and go for the next section, maybe sound effects.
+
+-FIX PHARAF ZOOM
