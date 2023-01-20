@@ -58,7 +58,7 @@ nav {
   position: fixed;
   border-right: 1px rgba(209, 206, 206, 0.267) solid;
   background-color: rgb(252, 250, 250);
-z-index: 250;
+  z-index: 250;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -414,7 +414,6 @@ h1 span {
     margin-right: 30px;
   }
   nav {
-
     width: 100%;
     height: 8vh;
     z-index: 200;
@@ -593,7 +592,7 @@ main {
 
 .koifish {
   width: 100px;
- 
+
   height: 15vh;
   padding-top: 100px;
   background-position: 90%;
@@ -604,7 +603,6 @@ main {
   background-repeat: no-repeat;
   filter: grayscale(100%);
   margin-top: 25px;
-
 }
 
 .koicontainer {
@@ -623,14 +621,12 @@ main {
   align-items: center;
   height: 75vh;
   flex-wrap: wrap;
- 
 }
 
 .storiecontainer p {
   width: 45%;
 
   font-weight: 100;
-
 }
 
 .p1,
@@ -640,15 +636,13 @@ main {
   padding: 15px;
   display: flex;
   justify-content: center;
-  
+
   margin-bottom: 25px;
 
-padding-top: 80px;
-padding-bottom: 80px;
-border-radius: 10px;
-color: rgb(156, 157, 158);
-
-
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  color: rgb(156, 157, 158);
 }
 
 .p11 p {
@@ -665,6 +659,14 @@ color: rgb(156, 157, 158);
     width: 100%;
     height: 50%;
     margin-bottom: 0px;
+  display: flex ;
+  justify-content: center;
+  
+  margin: 0px !important;
+  padding: 0px !important;
+  align-items: flex-end !important;
+  text-align: start;
+    
   }
   .p11 p {
     width: 100%;
@@ -672,6 +674,7 @@ color: rgb(156, 157, 158);
 
   .p1 p {
     width: 100%;
+    
   }
   .p11 {
     width: 100%;
@@ -693,52 +696,83 @@ color: rgb(156, 157, 158);
 
 .h1koi {
   color: rgb(122, 122, 122);
-width: 75%;
-font-size: 45px;
-font-weight: 800;
+  width: 75%;
+  font-size: 45px;
+  font-weight: 800;
   margin-top: 80px;
-
- 
-
 }
 
 @media only screen and (max-width: 1460px) {
   .h1koi {
-  
-  font-size: 50px;
+    font-size: 50px;
   }
 }
 
 @media only screen and (max-width: 840px) {
   .h1koi {
-  
-  font-size: 25px;
-  margin-top: 50px;
+    font-size: 25px;
+    margin-top: 50px;
   }
 }
 
 @media only screen and (max-width: 497px) {
   .h1koi {
-  
-  font-size: 20px;
-  width: 50%;
- 
+    font-size: 20px;
+    width: 50%;
   }
 }
 
-
 /* /////////////////////MAIN ENDS/////////////// */
 
-footer{
+footer {
   background-color: rgb(238, 216, 233);
   width: 100%;
   height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+main {
+  height: min-content;
+  
+}
+
+.storiecontainer {
+  display: flex;
+
+  height: min-content;
+}
+.heightprovider{
+  height: 20vh;
+}
+
+.p11{
+
+  justify-content: flex-end;
+}
+
+.p1{
+  justify-content: flex-start;
  
+}
+
+.p1 p{
+  margin-left: 110px;
+}
+
+.h1koi{
+  margin-left:140px;
 }
 
 
 
 
+
+@media only screen and (max-width: 1095px) {
+  .p1 p {
+    width: 100%;
+    margin-left: 10px !important;
+    
+  }
+}

@@ -27,11 +27,14 @@ Day3: First of all we are going to add some mediaqueries to the main page.
 
 14:36 All mediaqueries added to the main page, think im gonna start with the shop section. 
 
+
 Day4: Today is really productive day, i fix some issues in the mainscreen with the 
 soya sausage animation, mediaqueries in screen1 are finished. Sreen2 and mediaqueries 
 for screen2 are finished too.
 
+
+//IMPORTANT //IMPORTANT //IMPORTANT //IMPORTANT //IMPORTANT DAY5
+//IMPORTANT: height: min-content will contain the text into the div when u zoom.
+
 I want to add a "writting effect" in the screen2, and a gallery updown to screen3, after
 that is just footer and go for the next section, maybe sound effects.
-
--FIX PHARAF ZOOM
