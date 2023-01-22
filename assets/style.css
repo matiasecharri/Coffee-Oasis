@@ -732,6 +732,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 main {
@@ -800,6 +801,50 @@ position: absolute;
 .h3koi::before{
   background-color:  rgb(197, 21, 44);
   animation: typewriter 1.5s steps(15) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
+.animado{
+  font-size: 0px;
+}
+
+@font-face {
+  font-family: 'akirajimbo';
+  src: url('/assets/images/Akira\ Expanded\ Demo.otf') format('truetype'); /* puedes especificar distintos formatos según tu necesidad */
+}
+
+body {
+  font-family: 'Mi Fuente Personalizada', Arial, sans-serif;
+}
+
+.h4koi{
+  position: relative;
+  
+  font-size:15px;
+  font-family: monospace;
+  font-family: akirajimbo;
+}
+
+.h4koi::before,
+.h4koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h4koi::before{
+  background-color:  rgb(238,216,233);
+  animation: typewriter 2s steps(32) forwards; 
 }
 
 @keyframes typewriter {
