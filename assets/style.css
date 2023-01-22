@@ -439,6 +439,7 @@ main {
   display: flex;
   justify-content: center;
   background-image: url(./images/wallwhite.png);
+ 
 }
 
 .sectionmain {
@@ -776,3 +777,33 @@ main {
     
   }
 }
+
+
+
+.h3koi{
+  position: relative;
+}
+
+.h3koi::before,
+.h3koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h3koi::before{
+  background-color:  rgb(197, 21, 44);
+  animation: typewriter 1.5s steps(15) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
