@@ -865,8 +865,7 @@ position: absolute;
   background-size: cover;
   background-position: 5%;
   background-image: url(./images/Koi\ Fish\ Pond.gif);
-  position: absolute;
-  bottom: -130px;
+ margin-bottom: -85px;
  filter:   saturate(20%) ; 
 
 
