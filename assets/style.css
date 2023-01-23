@@ -858,17 +858,16 @@ position: absolute;
 
 
 .fishes {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 
   border-radius: 180px;
   background-size: cover;
   background-position: 5%;
   background-image: url(./images/Koi\ Fish\ Pond.gif);
   position: absolute;
-  bottom: -145px;
-filter: grayscale(90%);
-
+  bottom: -130px;
+ filter:   saturate(20%) ; 
 
 
 }
