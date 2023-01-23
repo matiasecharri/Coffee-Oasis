@@ -454,20 +454,7 @@ main {
   border-top: 2px rgb(197, 21, 44) solid;
 }
 
-.fishes {
-  width: 142px;
-  height: 142px;
 
-  border-radius: 180px;
-  background-size: cover;
-  background-position: 5%;
-  background-image: url(./images/Koi\ Fish\ Pond.gif);
-  position: absolute;
-  bottom: 156px;
-  left: 170px;
-  filter: hue-rotate(100deg);
-  opacity: 0.7;
-}
 
 .posicionando {
   display: flex;
@@ -480,92 +467,9 @@ main {
   position: relative;
 }
 
-@media only screen and (max-width: 1650px) {
-  .fishes {
-    width: 140px;
-    height: 140px;
 
-    border-radius: 180px;
-    background-size: cover;
-    background-position: 5%;
-    background-image: url(./images/Koi\ Fish\ Pond.gif);
-    position: absolute;
-    bottom: 180px;
-    left: 142px;
-  }
 
-  .posicionando {
-    display: flex;
-    justify-content: end;
-    width: 480px;
-    height: 458px;
-    align-items: center;
-    justify-content: center;
 
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 1523px) {
-  .fishes {
-    width: 140px;
-    height: 140px;
-
-    border-radius: 180px;
-    background-size: cover;
-    background-position: 5%;
-    background-image: url(./images/Koi\ Fish\ Pond.gif);
-    position: absolute;
-    bottom: 184px;
-    left: 135px;
-  }
-
-  .posicionando {
-    display: flex;
-    justify-content: end;
-    width: 480px;
-    height: 458px;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-  }
-}
-
-@media only screen and (max-width: 1150px) {
-  .fishes {
-    display: none;
-  }
-
-  .posicionando {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .fishes {
-    display: none;
-  }
-
-  .posicionando {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 3000px) {
-  .fishes {
-    width: 140px;
-    height: 140px;
-
-    border-radius: 180px;
-    background-size: cover;
-    background-position: 5%;
-    background-image: url(./images/Koi\ Fish\ Pond.gif);
-    position: absolute;
-    bottom: 174px;
-    left: 160px;
-  }
-}
 
 /* ////////////////////HEADER & NAV ENDS////////////////////////// */
 /* ////////////////////MAIN STARTS////////////////////////// */
@@ -953,3 +857,32 @@ position: absolute;
 
 
 
+.fishes {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 180px;
+  background-size: cover;
+  background-position: 5%;
+  background-image: url(./images/Koi\ Fish\ Pond.gif);
+  position: absolute;
+  bottom: -145px;
+filter: grayscale(90%);
+
+
+
+}
+
+@media only screen and (max-width: 740px) {
+  .h1koi{
+    font-size: 15px;
+    margin-left: 5px;
+    width: 80%;
+  }
+
+  .koifish{
+    width: 55px;
+    height: 55px;
+  
+  }
+}
