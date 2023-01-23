@@ -11,7 +11,7 @@ const observer = new IntersectionObserver(function(entries) {
   }
 });
 
-console.log("saludos")
+console.log("Nipon Bites fue diseñado y codeado por Matias Echarri")
 // Comienza a observar el elemento
 observer.observe(animatedElement);
 
@@ -29,7 +29,8 @@ const observer2 = new IntersectionObserver(function(entries) {
   }
 });
 
-console.log("saludos")
+console.log("Nipon Bites was designed and coded by Matias Echarri")
+console.log("https://github.com/matiasecharri")
 // Comienza a observar el elemento
 observer2.observe(animatedElement2);
 
