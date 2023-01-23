@@ -644,11 +644,13 @@ main {
   padding-bottom: 80px;
   border-radius: 10px;
   color: rgb(156, 157, 158);
+  
 }
 
 .p11 p {
   width: 53%;
   font-size: 14.8px;
+  font-family: monospace !important;
 }
 
 @media only screen and (max-width: 1095px) {
@@ -733,6 +735,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 main {
@@ -810,11 +813,12 @@ position: absolute;
 
 .animado{
   font-size: 0px;
+  padding: 20px;
 }
 
 @font-face {
   font-family: 'akirajimbo';
-  src: url('/assets/images/Akira\ Expanded\ Demo.otf') format('truetype'); /* puedes especificar distintos formatos según tu necesidad */
+  src: url('/assets/images/bullets4.ttf') format('truetype'); /* puedes especificar distintos formatos según tu necesidad */
 }
 
 body {
@@ -824,9 +828,11 @@ body {
 .h4koi{
   position: relative;
   
-  font-size:15px;
+  font-size:18px;
   font-family: monospace;
-  font-family: akirajimbo;
+  font-weight: 700;
+  padding: 20px;
+ 
 }
 
 .h4koi::before,
@@ -844,7 +850,7 @@ position: absolute;
 
 .h4koi::before{
   background-color:  rgb(238,216,233);
-  animation: typewriter 2s steps(32) forwards; 
+  animation: typewriter 1.5s steps(18) forwards; 
 }
 
 @keyframes typewriter {
@@ -852,3 +858,88 @@ position: absolute;
 }
 
 
+.h4koi span{
+  font-weight: 100;
+  font-family: monospace;
+  font-size:11px;
+  color: rgb(115, 116, 117);
+}
+
+
+.animado2{
+  font-size: 0px;
+  
+}
+
+
+.h4koi{
+  position: relative;
+  
+  font-size:18px;
+  font-family: monospace;
+  font-weight: 700;
+  padding: 15px;
+ 
+}
+
+.h4koi::before,
+.h4koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h4koi::before{
+  background-color:  rgb(238,216,233);
+  animation: typewriter 1.5s steps(18) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
+.h5koi{
+  position: relative;
+  
+  font-size:10px;
+  font-family: monospace;
+  font-weight: 700;
+ 
+
+ 
+}
+
+.h5koi::before,
+.h5koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h5koi::before{
+  background-color:  rgb(238,216,233);
+  animation: typewriter 1.5s steps(18) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+.animado2container{
+  height: 10px;
+
+
+}
