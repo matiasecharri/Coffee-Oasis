@@ -108,7 +108,8 @@ header {
   background-position: 6%;
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 8px 8px 8px;
+
 }
 .photo2 {
   width: 20%;
@@ -440,6 +441,7 @@ main {
   display: flex;
   justify-content: center;
   background-image: url(./images/wallwhite.png);
+  background-attachment: fixed;
  
 }
 
@@ -452,6 +454,7 @@ main {
   justify-content: center;
   align-items: center;
   border-top: 2px rgb(197, 21, 44) solid;
+  background-attachment: fixed;
 }
 
 
@@ -883,4 +886,12 @@ position: absolute;
     height: 55px;
   
   }
+}
+
+.maxcontainer{
+  height: 1000vh;
+  background-color: aqua;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 }
