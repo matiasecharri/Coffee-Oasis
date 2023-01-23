@@ -57,7 +57,8 @@ nav {
   position: absolute;
   position: fixed;
   border-right: 1px rgba(209, 206, 206, 0.267) solid;
-  background-color: rgb(252, 250, 250);
+  background-color: rgb(245, 240, 240);
+  
   z-index: 250;
   display: flex;
   justify-content: flex-start;
@@ -439,6 +440,7 @@ main {
   display: flex;
   justify-content: center;
   background-image: url(./images/wallwhite.png);
+ 
 }
 
 .sectionmain {
@@ -643,11 +645,13 @@ main {
   padding-bottom: 80px;
   border-radius: 10px;
   color: rgb(156, 157, 158);
+  
 }
 
 .p11 p {
   width: 53%;
   font-size: 14.8px;
+  font-family: monospace !important;
 }
 
 @media only screen and (max-width: 1095px) {
@@ -724,13 +728,15 @@ main {
 
 /* /////////////////////MAIN ENDS/////////////// */
 
-footer {
-  background-color: rgb(238, 216, 233);
+section {
+  background-color: rgb(236, 231, 235);
   width: 100%;
-  height: 35vh;
+  height: 28vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  
 }
 
 main {
@@ -775,4 +781,171 @@ main {
     margin-left: 10px !important;
     
   }
+}
+
+
+
+.h3koi{
+  position: relative;
+}
+
+.h3koi::before,
+.h3koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h3koi::before{
+  background-color:  rgb(197, 21, 44);
+  animation: typewriter 1.5s steps(15) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
+.animado{
+  font-size: 0px;
+  padding: 20px;
+}
+
+@font-face {
+  font-family: 'akirajimbo';
+  src: url('/assets/images/bullets4.ttf') format('truetype'); /* puedes especificar distintos formatos según tu necesidad */
+}
+
+body {
+  font-family: 'Mi Fuente Personalizada', Arial, sans-serif;
+}
+
+.h4koi{
+  position: relative;
+  
+  font-size:18px;
+  font-family: monospace;
+  font-weight: 700;
+  padding: 20px;
+ 
+}
+
+.h4koi::before,
+.h4koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h4koi::before{
+  background-color:  rgb(238,216,233);
+  animation: typewriter 1.5s steps(18) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
+.h4koi span{
+  font-weight: 100;
+  font-family: monospace;
+  font-size:11px;
+  color: rgb(115, 116, 117);
+}
+
+
+.animado2{
+  font-size: 0px;
+  
+}
+
+
+.h4koi{
+  position: relative;
+  
+  font-size:18px;
+  font-family: monospace;
+  font-weight: 700;
+  padding: 15px;
+ 
+}
+
+.h4koi::before,
+.h4koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h4koi::before{
+  background-color:  rgb(236, 231, 235);;
+  animation: typewriter 1.5s steps(18) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+
+.h5koi{
+  position: relative;
+  
+  font-size:10px;
+  font-family: monospace;
+  font-weight: 700;
+ 
+
+ 
+}
+
+.h5koi::before,
+.h5koi::after{
+
+content: "";
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+position: absolute;
+
+
+}
+
+.h5koi::before{
+  background-color:  rgb(236, 231, 235);
+  animation: typewriter 1.5s steps(18) forwards; 
+}
+
+@keyframes typewriter {
+  to {left: 100%;}
+}
+
+.animado2container{
+  height: 10px;
+
+
+}
+
+.section2{
+  background-color: rgb(236, 231, 235);
+  height: 72vh;
 }
