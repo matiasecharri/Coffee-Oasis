@@ -901,7 +901,7 @@ body {
   padding-top: 10px;
  padding-bottom: 20px;
  flex-wrap: wrap;
-  gap: 2vmin;
+  gap: 1vmin;
 
  
  
@@ -912,7 +912,7 @@ body {
   width: 35vmin;
   height: 58vmin;
   
-  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+  /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
   
   background: url(./images/sushi/sushi2.jpg);
   background-size: cover;
@@ -921,7 +921,8 @@ body {
   background-position: -100px -900px;
   background-size: contain;
   filter: grayscale(90%);
- 
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+
   
 }
 
@@ -930,7 +931,7 @@ body {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
-  border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ;
+  /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ; */
 
  background: url(./images/sushi/sushi1.jpg);
  background-size: cover;
@@ -939,7 +940,8 @@ body {
  background-position: -90px -900px;
  background-size: contain;
  filter: grayscale(0%) saturate(150%);
- 
+ clip-path: polygon(100% 0, 0 0, 0 100%);
+
  
   
 }
@@ -947,7 +949,7 @@ body {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
-  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+  /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
  
   background: url(./images/sushi/sushi3.jpg);
   
@@ -956,7 +958,8 @@ body {
   background-position: center;
   background-position: -100px -900px;
   filter: grayscale(0%) saturate(150%);
- 
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+
   
   
   
@@ -965,11 +968,13 @@ body {
 
 
 
+
+
 #image-track > .image4 {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
-  border-radius:0% 100% 0% 100% / 54% 75% 25% 46%;
+  /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
 
   background: url(./images/sushi/sushi6.jpg);
   background-size: contain;
@@ -977,7 +982,8 @@ body {
   background-position: center;
   background-position: 380px -900px;
   filter: grayscale(90%);
- 
+clip-path: polygon(100% 100%, 0 0, 0 100%);
+
   
   
 }
@@ -987,6 +993,7 @@ body {
  
   cursor: pointer;
   filter: grayscale(0%);
+  
 
   transition-duration: 450ms;
 }
@@ -1018,7 +1025,32 @@ body {
   transition-duration: 450ms;
 }
 
-
+@media only screen and (max-width: 600px) {
+  #image-track > .image{
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+margin-top: 0px;
+margin-bottom: 0px;
+  }
+  #image-track > .image2{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+margin-top: 0px;
+margin-bottom: 0px;
+  }
+  #image-track > .image3{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+margin-top: 0px;
+margin-bottom: -100px;
+  }
+  #image-track > .image4{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+margin-top: 0px;
+margin-bottom: -100px;
+  }
+}
 
 
 

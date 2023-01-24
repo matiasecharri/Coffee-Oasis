@@ -42,4 +42,4 @@ that is just footer and go for the next section, maybe sound effects.
 
 Day5: Writting effect added :), tommorrow is day for the gallery and parallax.
 
-Day6: Parallax effect added, now im gonna add the gallery.
+Day6: Parallax effect added, gallery added, i need to add footer and mediqueries for the images and thats all with the main screen.
