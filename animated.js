@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     setTimeout(() => {
       animatedElement.classList.add("h4koi");
-    }, 200); // Retrasa la animación 2 segundos
+    }, 1000); // Retrasa la animación 2 segundos
   }
 });
 
@@ -29,7 +29,7 @@ const observer2 = new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     setTimeout(() => {
       animatedElement2.classList.add("h5koi");
-    }, 1800); // Retrasa la animación 2 segundos
+    }, 2500); // Retrasa la animación 2 segundos
   }
 });
 

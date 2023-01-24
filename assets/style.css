@@ -902,6 +902,8 @@ body {
  padding-bottom: 20px;
  flex-wrap: wrap;
   gap: 2vmin;
+
+ 
  
 }
 
@@ -909,9 +911,16 @@ body {
 #image-track > .image {
   width: 35vmin;
   height: 58vmin;
-  object-fit: cover;
-  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% 
   
+  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+  
+  background: url(./images/sushi/sushi2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: -100px -900px;
+  background-size: contain;
+  filter: grayscale(90%);
  
   
 }
@@ -921,20 +930,102 @@ body {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
-  border-radius:0% 100% 0% 100% / 54% 75% 25% 46% 
+  border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ;
+
+ background: url(./images/sushi/sushi1.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
+ background-position: -90px -900px;
+ background-size: contain;
+ filter: grayscale(0%) saturate(150%);
+ 
  
   
 }
+#image-track > .image3 {
+  width: 35vmin;
+  height: 58vmin;
+  object-fit: cover;
+  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+ 
+  background: url(./images/sushi/sushi3.jpg);
+  
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: -100px -900px;
+  filter: grayscale(0%) saturate(150%);
+ 
+  
+  
+  
+}
+
+
+
 
 #image-track > .image4 {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
-  border-radius:0% 100% 0% 100% / 54% 75% 25% 46% 
+  border-radius:0% 100% 0% 100% / 54% 75% 25% 46%;
+
+  background: url(./images/sushi/sushi6.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: 380px -900px;
+  filter: grayscale(90%);
  
+  
   
 }
 
+#image-track .image4:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image3:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image2:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+footer{
+  height: 16.5vh;
+   background-color: rgb(235, 223, 232);
+   display: flex;
+  
+   z-index: 560000;
+   width: 100%;
+}
 
 
 
