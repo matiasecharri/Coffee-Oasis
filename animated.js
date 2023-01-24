@@ -1,6 +1,10 @@
 
-
-
+let misDivs = document.getElementsByClassName("mi-clase");
+for (let i = 0; i < misDivs.length; i++) {
+  misDivs[i].addEventListener("click", function(){
+    window.location.href = "http://127.0.0.1:5500/menu.html";
+  });
+}
 
 
 
@@ -37,4 +41,3 @@ console.log("Nipon Bites was designed and coded by Matias Echarri");
 console.log("https://github.com/matiasecharri");
 // Comienza a observar el elemento
 observer2.observe(animatedElement2);
-
