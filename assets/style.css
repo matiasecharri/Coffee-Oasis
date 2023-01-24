@@ -5,6 +5,12 @@
   font-family: "Noto Serif JP", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+
+  scroll-margin: -500px;
+}
+
 /* ////////////////////HEADER & NAV STARTS////////////////////////// */
 
 .colormain {
@@ -58,7 +64,7 @@ nav {
   position: fixed;
   border-right: 1px rgba(209, 206, 206, 0.267) solid;
   background-color: rgb(245, 240, 240);
-  
+
   z-index: 250;
   display: flex;
   justify-content: flex-start;
@@ -105,10 +111,13 @@ header {
   background-image: url(./images/let-us-have-sushi-as--instead-wallpaper.jpg);
   background-size: cover;
   border-radius: 1px;
-  background-position: 6%;
+  background-position: 15%;
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
-  border-radius: 8px 0px 0px 8px;
+  border-radius: 8px 8px 8px 8px;
+ 
+ 
+
 }
 .photo2 {
   width: 20%;
@@ -403,7 +412,12 @@ h1 span {
   .thedoubletext {
     width: 50%;
   }
-
+  .nav2 {
+    position: absolute;
+    top: 50px;
+    left: -120px;
+    z-index: 1000;
+  }
   .mainfigure {
     width: 35%;
     margin-top: 100px;
@@ -440,7 +454,7 @@ main {
   display: flex;
   justify-content: center;
   background-image: url(./images/wallwhite.png);
- 
+  background-attachment: fixed;
 }
 
 .sectionmain {
@@ -452,9 +466,8 @@ main {
   justify-content: center;
   align-items: center;
   border-top: 2px rgb(197, 21, 44) solid;
+  background-attachment: fixed;
 }
-
-
 
 .posicionando {
   display: flex;
@@ -466,10 +479,6 @@ main {
 
   position: relative;
 }
-
-
-
-
 
 /* ////////////////////HEADER & NAV ENDS////////////////////////// */
 /* ////////////////////MAIN STARTS////////////////////////// */
@@ -549,7 +558,6 @@ main {
   padding-bottom: 80px;
   border-radius: 10px;
   color: rgb(156, 157, 158);
-  
 }
 
 .p11 p {
@@ -567,14 +575,13 @@ main {
     width: 100%;
     height: 50%;
     margin-bottom: 0px;
-  display: flex ;
-  justify-content: center;
-  
-  margin: 0px !important;
-  padding: 0px !important;
-  align-items: flex-end !important;
-  text-align: start;
-    
+    display: flex;
+    justify-content: center;
+
+    margin: 0px !important;
+    padding: 0px !important;
+    align-items: flex-end !important;
+    text-align: start;
   }
   .p11 p {
     width: 100%;
@@ -582,7 +589,6 @@ main {
 
   .p1 p {
     width: 100%;
-    
   }
   .p11 {
     width: 100%;
@@ -635,17 +641,15 @@ main {
 section {
   background-color: rgb(236, 231, 235);
   width: 100%;
-  height: 28vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 main {
   height: min-content;
-  
 }
 
 .storiecontainer {
@@ -653,207 +657,175 @@ main {
 
   height: min-content;
 }
-.heightprovider{
+.heightprovider {
   height: 20vh;
 }
 
-.p11{
-
+.p11 {
   justify-content: flex-end;
 }
 
-.p1{
+.p1 {
   justify-content: flex-start;
- 
 }
 
-.p1 p{
+.p1 p {
   margin-left: 110px;
 }
 
-.h1koi{
-  margin-left:140px;
+.h1koi {
+  margin-left: 140px;
 }
-
-
-
-
 
 @media only screen and (max-width: 1095px) {
   .p1 p {
     width: 100%;
     margin-left: 10px !important;
-    
   }
 }
 
-
-
-.h3koi{
+.h3koi {
   position: relative;
 }
 
 .h3koi::before,
-.h3koi::after{
-
-content: "";
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-position: absolute;
-
-
+.h3koi::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
-.h3koi::before{
-  background-color:  rgb(197, 21, 44);
-  animation: typewriter 1.5s steps(15) forwards; 
+.h3koi::before {
+  background-color: rgb(197, 21, 44);
+  animation: typewriter 1.5s steps(15) forwards;
 }
 
 @keyframes typewriter {
-  to {left: 100%;}
+  to {
+    left: 100%;
+  }
 }
 
-
-.animado{
+.animado {
   font-size: 0px;
   padding: 20px;
 }
 
 @font-face {
-  font-family: 'akirajimbo';
-  src: url('/assets/images/bullets4.ttf') format('truetype'); /* puedes especificar distintos formatos según tu necesidad */
+  font-family: "akirajimbo";
+  src: url("/assets/images/bullets4.ttf") format("truetype"); /* puedes especificar distintos formatos según tu necesidad */
 }
 
 body {
-  font-family: 'Mi Fuente Personalizada', Arial, sans-serif;
+  font-family: "Mi Fuente Personalizada", Arial, sans-serif;
 }
 
-.h4koi{
+.h4koi {
   position: relative;
-  
-  font-size:18px;
+
+  font-size: 18px;
   font-family: monospace;
   font-weight: 700;
   padding: 20px;
- 
 }
 
 .h4koi::before,
-.h4koi::after{
-
-content: "";
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-position: absolute;
-
-
+.h4koi::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
-.h4koi::before{
-  background-color:  rgb(238,216,233);
-  animation: typewriter 1.5s steps(18) forwards; 
+.h4koi::before {
+  background-color: rgb(238, 216, 233);
+  animation: typewriter 1.5s steps(18) forwards;
 }
 
 @keyframes typewriter {
-  to {left: 100%;}
+  to {
+    left: 100%;
+  }
 }
 
-
-.h4koi span{
+.h4koi span {
   font-weight: 100;
   font-family: monospace;
-  font-size:11px;
+  font-size: 11px;
   color: rgb(115, 116, 117);
 }
 
-
-.animado2{
+.animado2 {
   font-size: 0px;
-  
 }
 
-
-.h4koi{
+.h4koi {
   position: relative;
-  
-  font-size:18px;
+
+  font-size: 18px;
   font-family: monospace;
   font-weight: 700;
   padding: 15px;
- 
 }
 
 .h4koi::before,
-.h4koi::after{
-
-content: "";
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-position: absolute;
-
-
+.h4koi::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
-.h4koi::before{
-  background-color:  rgb(236, 231, 235);;
-  animation: typewriter 1.5s steps(18) forwards; 
+.h4koi::before {
+  background-color: rgb(236, 231, 235);
+  animation: typewriter 1.5s steps(18) forwards;
 }
 
 @keyframes typewriter {
-  to {left: 100%;}
+  to {
+    left: 100%;
+  }
 }
 
-
-.h5koi{
+.h5koi {
   position: relative;
-  
-  font-size:10px;
+
+  font-size: 10px;
   font-family: monospace;
   font-weight: 700;
- 
-
- 
 }
 
 .h5koi::before,
-.h5koi::after{
-
-content: "";
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-position: absolute;
-
-
+.h5koi::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
-.h5koi::before{
-  background-color:  rgb(236, 231, 235);
-  animation: typewriter 1.5s steps(18) forwards; 
+.h5koi::before {
+  background-color: rgb(236, 231, 235);
+  animation: typewriter 1.5s steps(18) forwards;
 }
 
 @keyframes typewriter {
-  to {left: 100%;}
+  to {
+    left: 100%;
+  }
 }
 
-.animado2container{
+.animado2container {
   height: 10px;
-
-
 }
-
-.section2{
-  background-color: rgb(236, 231, 235);
-  height: 72vh;
-}
-
 
 
 
@@ -865,23 +837,188 @@ position: absolute;
   background-size: cover;
   background-position: 5%;
   background-image: url(./images/Koi\ Fish\ Pond.gif);
-  position: absolute;
-  bottom: -130px;
- filter:   saturate(20%) ; 
-
-
+  margin-bottom: -85px;
+  filter: saturate(20%);
 }
 
 @media only screen and (max-width: 740px) {
-  .h1koi{
+  .h1koi {
     font-size: 15px;
     margin-left: 5px;
     width: 80%;
   }
 
-  .koifish{
+  .koifish {
     width: 55px;
     height: 55px;
-  
   }
 }
+
+.nav2 {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+
+  position: absolute;
+  justify-content: flex-start;
+  position: fixed;
+}
+
+.subnav2 {
+  width: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subnav2 a {
+  cursor: pointer;
+  color: rgb(199, 194, 198);
+  font-size: 15px;
+  font-family: monospace;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.subnav2 a:hover {
+  cursor: pointer;
+  color: rgb(65, 63, 63);
+
+  transition-duration: 500ms;
+}
+
+#image-track{
+  background-color: aqua;
+  background-color: rgb(236, 231, 235);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+  padding-top: 10px;
+ padding-bottom: 20px;
+ flex-wrap: wrap;
+  gap: 2vmin;
+
+ 
+ 
+}
+
+
+#image-track > .image {
+  width: 35vmin;
+  height: 58vmin;
+  
+  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+  
+  background: url(./images/sushi/sushi2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: -100px -900px;
+  background-size: contain;
+  filter: grayscale(90%);
+ 
+  
+}
+
+
+#image-track > .image2 {
+  width: 35vmin;
+  height: 58vmin;
+  object-fit: cover;
+  border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ;
+
+ background: url(./images/sushi/sushi1.jpg);
+ background-size: cover;
+ background-attachment: fixed;
+ background-position: center;
+ background-position: -90px -900px;
+ background-size: contain;
+ filter: grayscale(0%) saturate(150%);
+ 
+ 
+  
+}
+#image-track > .image3 {
+  width: 35vmin;
+  height: 58vmin;
+  object-fit: cover;
+  border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ;
+ 
+  background: url(./images/sushi/sushi3.jpg);
+  
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: -100px -900px;
+  filter: grayscale(0%) saturate(150%);
+ 
+  
+  
+  
+}
+
+
+
+
+#image-track > .image4 {
+  width: 35vmin;
+  height: 58vmin;
+  object-fit: cover;
+  border-radius:0% 100% 0% 100% / 54% 75% 25% 46%;
+
+  background: url(./images/sushi/sushi6.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: 380px -900px;
+  filter: grayscale(90%);
+ 
+  
+  
+}
+
+#image-track .image4:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image3:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image2:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+#image-track .image:hover {
+  
+ 
+  cursor: pointer;
+  filter: grayscale(0%) saturate(150%);
+
+  transition-duration: 450ms;
+}
+
+
+
+
+
