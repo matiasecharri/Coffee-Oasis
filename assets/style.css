@@ -1054,35 +1054,118 @@ margin-bottom: -100px;
 
 
 
-@media only screen and (max-width: 1780px) {
+@media only screen and (max-width: 1750px) {
+  #image-track > .image {
+    width: 35vmin;
+    height: 58vmin;
+    
+    /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
+    
+    background: url(./images/sushi/sushi2.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+ 
+    background-size: contain;
+    filter: grayscale(90%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-size: cover;
+    
+  }
+  
+  
   #image-track > .image2 {
-   
+    width: 35vmin;
+    height: 58vmin;
+ 
+    /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ; */
+  
+   background: url(./images/sushi/sushi1.jpg);
    background-size: cover;
-   
+   background-attachment: scroll;
+   background-position: center;
+  
+   background-size: contain;
+   filter: grayscale(0%) saturate(150%);
+   clip-path: polygon(100% 0, 0 0, 0 100%);
+   background-size: cover;
    
     
   }
-  #image-track > .image {
+  #image-track > .image3 {
+    width: 35vmin;
+    height: 58vmin;
+  
+    /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
    
+    background: url(./images/sushi/sushi3.jpg);
+    
     background-size: cover;
-    background-position: -0px -0px;
+    background-attachment: scroll;
+    background-position: center;
+   
+    filter: grayscale(0%) saturate(150%);
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+    background-size: cover;
+    
+    
+    
+  }
+  
+  
+  
+  
+  
+  
+  #image-track > .image4 {
+    width: 35vmin;
+    height: 58vmin;
+   
+    /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
+  
+    background: url(./images/sushi/sushi6.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    
+    filter: grayscale(90%);
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
+  
+  background-size: cover;
+    
+  }
+    
+     
+   }
 
-    
-     
-   }
-   #image-track > .image4 {
-   
-    background-size: cover;
-    
-    
-     
-   }
-   #image-track > .image3 {
-    background-position: -100px -500px;
-    background-size: cover;
-    
-    
-     
-   }
+footer{
+  height: 5vh;
+  background-color: rgb(236, 231, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.codedanddesigned{
+  font-size: 11px;
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
+
+width: 250px;
+ 
+  
+  text-align: center;
+}
+
+
+.codedanddesigned2{
+  font-size: 11px;
+  font-family: monospace;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+
+/* ///////////////////////////MENU STARTS//////////////////////////// */
