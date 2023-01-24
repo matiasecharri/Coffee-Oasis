@@ -42,4 +42,7 @@ that is just footer and go for the next section, maybe sound effects.
 
 Day5: Writting effect added :), tommorrow is day for the gallery and parallax.
 
-Day6: Parallax effect added, gallery added, i need to add footer and mediqueries for the images and thats all with the main screen.
+Day6: Parallax effect added, smooth effect added, gallery added, i need to add footer and mediqueries for the images and thats all with the main screen.
+
+Day7: Image problem fixed, no more lagg in screen1, fix mediaqueries screen1, fix some issues in screen1, mockup shop created, mediaqueries shop created.
+Today was very productive, i think tomorrow is finally Javascript day, i have to add some inputs in the shop section and then we go.

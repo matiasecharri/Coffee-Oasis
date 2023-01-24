@@ -1121,22 +1121,25 @@ footer {
 .menumain {
   min-height: 100vh;
   width: 75%;
-  background-color: aqua;
+
+  background-image: url(/assets/images/ruidoshop.jpg);
+ 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
-  gap: 20px;
+  padding-top:40px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 .asidecontainer{
   width: 25%;
   min-height: 100vh;
-  background-color: aquamarine;
+ 
   
 }
 aside {
   width: 25%;
+  background-image: url(/assets/images/ruidoshopred.jpg);
   background-color: rgb(221, 120, 89);
  
   min-height: 100vh;
@@ -1145,12 +1148,127 @@ aside {
   justify-content: center;
   position: fixed;
 }
+/* 
+//////////////////EMPIEZA LA CARD///////////////// */
 .card {
-  width: 290px;
-  height: 400px;
-  background-color: bisque;
+  width: 280px;
+  height: 450px;
+  background-color: rgb(243, 243, 243);
   border: none;
+  border-radius: 0px;
+  border-radius: 10px 10px 5px 5px;
+  margin-bottom: 30px;
+  flex-direction: column;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.cardimage{
+  
+  height: 200px;
+  border-radius: 5px 5px 5px 5px;
+
+}
+
+.cardimage img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ border-radius: 5px 5px 0px 0px;
+}
+
+.descriptioncontainercard{
+  
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.card h3 {
+  
+  height: 20px;
+ 
+  
+  font-size: 18px;
+  font-family:  'Raleway', sans-serif;
+  font-weight: 700;
+  
+ ;
+  
+}
+
+.descriptioncontainercard p{
+  font-size: 12px;
+  font-family:  'Raleway', sans-serif;
+  padding-right: 10px;
+
+height: 95px;
+font-weight: 400;
+border-bottom: 1px solid rgb(212, 211, 211);
+overflow: auto;}
+
+.descriptioncontainercard p::-webkit-scrollbar {
+  width: 5px;
+  ; /* Tamaño de la barra de desplazamiento */
+  background-color: #F5F5F5; /* Color de fondo */
+}
+
+.descriptioncontainercard p::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  height: -2px /* Color del cursor */
+}
+  .pricecard{
+    width: 100%;
+    padding: 2px;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    
+    color: rgb(36, 35, 35);
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    font-size: 12px;
+    padding: 10px;
+   font-weight: 700;
+    border: 1px solid rgb(199, 195, 195);
+  }
+.descriptioncontainercard button{
+  width: 100%;
+  padding: 5px;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: rgb(226, 37, 62);
+  color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.descriptioncontainercard button:hover{
+ 
+  background-color: rgb(68, 68, 67);
+  color: rgb(226, 37, 62); 
+  font-weight: 800;
+
+
+  
+}
+
+
+
+/* /////////////////////TERMINACARD////////////////////////*/
+
+
+
 
 
 
