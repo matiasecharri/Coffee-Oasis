@@ -115,9 +115,6 @@ header {
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
   border-radius: 8px 8px 8px 8px;
- 
- 
-
 }
 .photo2 {
   width: 20%;
@@ -827,8 +824,6 @@ body {
   height: 10px;
 }
 
-
-
 .fishes {
   width: 75px;
   height: 75px;
@@ -890,30 +885,26 @@ body {
   transition-duration: 500ms;
 }
 
-#image-track{
+#image-track {
   background-color: aqua;
   background-color: rgb(236, 231, 235);
- 
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 80vh;
   padding-top: 10px;
- padding-bottom: 20px;
- flex-wrap: wrap;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
   gap: 1vmin;
-
- 
- 
 }
-
 
 #image-track > .image {
   width: 35vmin;
   height: 58vmin;
-  
+
   /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
-  
+
   background: url(./images/sushi/sushi2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -922,10 +913,7 @@ body {
   background-size: contain;
   filter: grayscale(90%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
-
-  
 }
-
 
 #image-track > .image2 {
   width: 35vmin;
@@ -933,42 +921,30 @@ body {
   object-fit: cover;
   /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ; */
 
- background: url(./images/sushi/sushi1.jpg);
- background-size: cover;
- background-attachment: fixed;
- background-position: center;
- background-position: -60px -0px;
- background-size: contain;
- filter: grayscale(0%) saturate(150%);
- clip-path: polygon(100% 0, 0 0, 0 100%);
-
- 
-  
+  background: url(./images/sushi/sushi1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-position: -60px -0px;
+  background-size: contain;
+  filter: grayscale(0%) saturate(150%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 #image-track > .image3 {
   width: 35vmin;
   height: 58vmin;
   object-fit: cover;
   /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
- 
+
   background: url(./images/sushi/sushi3.jpg);
-  
+
   background-size: contain;
   background-attachment: fixed;
   background-position: center;
   background-position: -100px -900px;
   filter: grayscale(0%) saturate(150%);
   clip-path: polygon(100% 100%, 100% 0, 0 100%);
-
-  
-  
-  
 }
-
-
-
-
-
 
 #image-track > .image4 {
   width: 35vmin;
@@ -982,25 +958,17 @@ body {
   background-position: center;
   background-position: 380px -900px;
   filter: grayscale(90%);
-clip-path: polygon(100% 100%, 0 0, 0 100%);
-
-  
-  
+  clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
 
 #image-track .image4:hover {
-  
- 
   cursor: pointer;
   filter: grayscale(0%);
-  
 
   transition-duration: 450ms;
 }
 
 #image-track .image3:hover {
-  
- 
   cursor: pointer;
   filter: grayscale(0%) saturate(150%);
 
@@ -1008,8 +976,6 @@ clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
 
 #image-track .image2:hover {
-  
- 
   cursor: pointer;
   filter: grayscale(0%) saturate(150%);
 
@@ -1017,8 +983,6 @@ clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
 
 #image-track .image:hover {
-  
- 
   cursor: pointer;
   filter: grayscale(0%) saturate(150%);
 
@@ -1026,119 +990,102 @@ clip-path: polygon(100% 100%, 0 0, 0 100%);
 }
 
 @media only screen and (max-width: 600px) {
-  #image-track > .image{
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-margin-top: 0px;
-margin-bottom: 0px;
-  }
-  #image-track > .image2{
+  #image-track > .image {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-margin-top: 0px;
-margin-bottom: 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  #image-track > .image3{
+  #image-track > .image2 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-margin-top: 0px;
-margin-bottom: -100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
-  #image-track > .image4{
+  #image-track > .image3 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-margin-top: 0px;
-margin-bottom: -100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 0px;
+    margin-bottom: -100px;
+  }
+  #image-track > .image4 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    margin-top: 0px;
+    margin-bottom: -100px;
   }
 }
-
-
 
 @media only screen and (max-width: 1750px) {
   #image-track > .image {
     width: 35vmin;
     height: 58vmin;
-    
+
     /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
-    
+
     background: url(./images/sushi/sushi2.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
- 
+
     background-size: contain;
     filter: grayscale(90%);
     clip-path: polygon(100% 0, 0 0, 100% 100%);
     background-size: cover;
-    
   }
-  
-  
+
   #image-track > .image2 {
     width: 35vmin;
     height: 58vmin;
- 
+
     /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ; */
-  
-   background: url(./images/sushi/sushi1.jpg);
-   background-size: cover;
-   background-attachment: scroll;
-   background-position: center;
-  
-   background-size: contain;
-   filter: grayscale(0%) saturate(150%);
-   clip-path: polygon(100% 0, 0 0, 0 100%);
-   background-size: cover;
-   
-    
+
+    background: url(./images/sushi/sushi1.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+
+    background-size: contain;
+    filter: grayscale(0%) saturate(150%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    background-size: cover;
   }
   #image-track > .image3 {
     width: 35vmin;
     height: 58vmin;
-  
+
     /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
-   
+
     background: url(./images/sushi/sushi3.jpg);
-    
+
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
-   
+
     filter: grayscale(0%) saturate(150%);
     clip-path: polygon(100% 100%, 100% 0, 0 100%);
     background-size: cover;
-    
-    
-    
   }
-  
-  
-  
-  
-  
-  
+
   #image-track > .image4 {
     width: 35vmin;
     height: 58vmin;
-   
+
     /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
-  
+
     background: url(./images/sushi/sushi6.jpg);
     background-size: cover;
     background-attachment: scroll;
     background-position: center;
-    
-    filter: grayscale(90%);
-  clip-path: polygon(100% 100%, 0 0, 0 100%);
-  
-  background-size: cover;
-    
-  }
-    
-     
-   }
 
-footer{
+    filter: grayscale(90%);
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+
+    background-size: cover;
+  }
+}
+
+footer {
   height: 5vh;
   background-color: rgb(236, 231, 235);
   display: flex;
@@ -1146,20 +1093,18 @@ footer{
   align-items: center;
 }
 
-.codedanddesigned{
+.codedanddesigned {
   font-size: 11px;
   font-family: monospace;
   text-decoration: none;
   color: black;
 
-width: 250px;
- 
-  
+  width: 250px;
+
   text-align: center;
 }
 
-
-.codedanddesigned2{
+.codedanddesigned2 {
   font-size: 11px;
   font-family: monospace;
   text-decoration: none;
@@ -1167,55 +1112,48 @@ width: 250px;
   font-weight: 700;
 }
 
-
 /* ///////////////////////////MENU STARTS//////////////////////////// */
-
-
-.menumain2{
-  height: 100vh;
-  
-  background-color:  rgb(197,21,44);
+.contmenu {
+  height: fit-content;
+  display: flex;  
+  flex-direction: row;
+}
+.menumain {
+  min-height: 100vh;
+  width: 75%;
+  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px;
+  padding: 80px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-
-.menufood{
-  height: 85vh;
-  width: 70%;
+.asidecontainer{
+  width: 25%;
+  min-height: 100vh;
+  background-color: aquamarine;
   
 }
-
-aside{
-  width: 20%;
-  background-color: rgb(61, 61, 61);
-  height: 85vh;
+aside {
+  width: 25%;
+  background-color: rgb(221, 120, 89);
+ 
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: fixed;
 }
-
-
-@media only screen and (max-width: 1100px) {
-  .menumain2{
-    flex-direction: column-reverse;
-  }
-
-  aside{
-    width: 90%;
-    height: 10vh;
-  }
-
-  .menufood{
-    
-    width: 90%;
-    height: 70vh;
-    
-  }
+.card {
+  width: 290px;
+  height: 400px;
+  background-color: bisque;
+  border: none;
 }
 
 
 
-@media only screen and (max-width: 550px) {
-  .menumain2{
-   margin-left: 0px;
-  }
-}
+
+
+
