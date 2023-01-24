@@ -2,7 +2,7 @@
 let misDivs = document.getElementsByClassName("mi-clase");
 for (let i = 0; i < misDivs.length; i++) {
   misDivs[i].addEventListener("click", function(){
-    window.location.href = "http://127.0.0.1:5500/menu.html";
+    window.location.href = "https://nippon-bites.vercel.app/menu.html";
   });
 }
 
