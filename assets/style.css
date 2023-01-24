@@ -1194,6 +1194,7 @@ aside {
   font-size: 18px;
   font-family:  'Raleway', sans-serif;
   font-weight: 700;
+  
  ;
   
 }
@@ -1201,10 +1202,23 @@ aside {
 .descriptioncontainercard p{
   font-size: 12px;
   font-family:  'Raleway', sans-serif;
+  padding-right: 10px;
 
 height: 95px;
 font-weight: 400;
-border-bottom: 1px solid rgb(212, 211, 211);}
+border-bottom: 1px solid rgb(212, 211, 211);
+overflow: auto;}
+
+.descriptioncontainercard p::-webkit-scrollbar {
+  width: 5px;
+  ; /* Tamaño de la barra de desplazamiento */
+  background-color: #F5F5F5; /* Color de fondo */
+}
+
+.descriptioncontainercard p::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  height: -2px /* Color del cursor */
+}
   .pricecard{
     width: 100%;
     padding: 2px;
