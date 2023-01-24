@@ -918,7 +918,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-position: -100px -900px;
+  background-position: 70px -900px;
   background-size: contain;
   filter: grayscale(90%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
@@ -937,7 +937,7 @@ body {
  background-size: cover;
  background-attachment: fixed;
  background-position: center;
- background-position: -90px -900px;
+ background-position: -60px -0px;
  background-size: contain;
  filter: grayscale(0%) saturate(150%);
  clip-path: polygon(100% 0, 0 0, 0 100%);
@@ -1053,4 +1053,36 @@ margin-bottom: -100px;
 }
 
 
+
+@media only screen and (max-width: 1780px) {
+  #image-track > .image2 {
+   
+   background-size: cover;
+   
+   
+    
+  }
+  #image-track > .image {
+   
+    background-size: cover;
+    background-position: -0px -0px;
+
+    
+     
+   }
+   #image-track > .image4 {
+   
+    background-size: cover;
+    
+    
+     
+   }
+   #image-track > .image3 {
+    background-position: -100px -500px;
+    background-size: cover;
+    
+    
+     
+   }
+}
 
