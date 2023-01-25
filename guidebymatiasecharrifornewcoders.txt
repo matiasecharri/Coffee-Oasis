@@ -46,3 +46,5 @@ Day6: Parallax effect added, smooth effect added, gallery added, i need to add f
 
 Day7: Image problem fixed, no more lagg in screen1, fix mediaqueries screen1, fix some issues in screen1, mockup shop created, mediaqueries shop created.
 Today was very productive, i think tomorrow is finally Javascript day, i have to add some inputs in the shop section and then we go.TEST REPO
+
+Day8: Relax day, no code
