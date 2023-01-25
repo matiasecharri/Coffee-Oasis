@@ -1154,6 +1154,7 @@ aside {
   width: 280px;
   height: 450px;
   background-color: rgb(243, 243, 243);
+  /* background-color: rgba(29, 24, 24, 0); */
   border: none;
   border-radius: 0px;
   border-radius: 10px 10px 5px 5px;
