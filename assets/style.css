@@ -1134,23 +1134,29 @@ footer {
 .asidecontainer{
   width: 25%;
   min-height: 100vh;
- 
+  z-index: 150;
   
 }
 aside {
   width: 25%;
-  background-image: url(/assets/images/ruidoshopred.jpg);
-  background-color: rgb(221, 120, 89);
+  
+
+  background-image: url(/assets/images/ruidoshop3.jpg);
  
+ 
+ gap: 20px;
   min-height: 100vh;
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   position: fixed;
+  padding-top: 40px;
+ align-items: center;
 }
 /* 
 //////////////////EMPIEZA LA CARD///////////////// */
 .card {
+  z-index: 20;
   width: 280px;
   height: 450px;
   background-color: rgb(243, 243, 243);
@@ -1323,3 +1329,100 @@ overflow: auto;}
   }
 }
 
+aside h5{
+  color: white;
+  margin-left: 80px;
+  font-size: 23px;
+  font-weight: 700;  font-family: 'Nunito', sans-serif;
+}
+
+#searchbar1{
+  border-radius: 8px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  padding: 7px;
+  width: 245px;
+  height: 30px;
+  font-size: 12px;
+  margin-left: 80px;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  
+}
+
+@media only screen and (max-width: 1450px) {
+ aside h5{
+  font-size: 15px;
+  margin-right: 10px;
+ }
+  #searchbar1{
+    width: 180px;
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  
+}
+
+
+.checkboxes{
+  width: 300px;
+  height: 50px;
+  
+
+;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-left: 110px;
+flex-wrap: wrap;
+align-content: center;
+
+gap: 5px;
+margin-bottom: 10px;
+
+}
+
+
+form{
+  margin-left: 10px;
+  width: 120px;
+
+  display: flex;
+  gap: 10px;
+}
+
+form label {
+  font-family:  'Raleway', sans-serif;
+  color: azure;
+  font-size: 12px;
+  font-weight: 600;
+  
+  font-family: 'Nunito', sans-serif;
+}
+
+
+input{
+  accent-color: rgb(248, 246, 246);
+}
+
+.form-check-input:checked {
+  background-color: rgb(65, 63, 63);
+  border-color: transparent;
+  cursor: pointer;
+ 
+ 
+}
+.form-check-input {
+  background-color: #edf1f1;
+  border-color: rgb(199, 192, 192);
+ 
+  
+  transition-duration: 430ms;
+  cursor: pointer;
+  
+  
+}
