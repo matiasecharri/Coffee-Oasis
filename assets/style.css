@@ -1414,6 +1414,7 @@ input{
   border-color: transparent;
   cursor: pointer;
  
+ 
 }
 .form-check-input {
   background-color: #edf1f1;
@@ -1422,5 +1423,6 @@ input{
   
   transition-duration: 430ms;
   cursor: pointer;
+  
   
 }
