@@ -1382,7 +1382,9 @@ aside h5{
 }
 
 .gallery{
-  width: 112px;
+  width: 152px;
+  position: absolute;
+  right: 20px;
  
 }
 
