@@ -1353,7 +1353,7 @@ aside h5{
   
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
  
   .fishes{
     width: 55px !important;
@@ -1361,20 +1361,23 @@ aside h5{
   
   }
   footer{
-    padding-top: 25px;
+   
+    min-height: 10vh;
+    z-index: 20000;
   }
 
   
 .image4{
-  margin-bottom: 50px !important;
+  margin-bottom: 0px !important;
 
 
 }
 
 #image-track{
-  min-height: 50vh !important;
+  min-height: 30vh !important;
   display: flex;
-  gap: 0px;
+  gap: 5px;
+  background-color: aqua;
 }
 
 }
