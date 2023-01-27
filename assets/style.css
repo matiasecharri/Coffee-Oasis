@@ -1353,7 +1353,7 @@ aside h5{
   
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
  
   .fishes{
     width: 55px !important;
