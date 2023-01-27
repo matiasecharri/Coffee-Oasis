@@ -1353,6 +1353,41 @@ aside h5{
   
 }
 
+@media only screen and (max-width: 320px) {
+ 
+  .fishes{
+    width: 55px !important;
+    height: 55px !important;
+  
+  }
+  footer{
+    padding-top: 25px;
+  }
+
+  
+.image4{
+  margin-bottom: 50px !important;
+
+
+}
+
+#image-track{
+  min-height: 50vh !important;
+  display: flex;
+  gap: 0px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1450px) {
  aside h5{
   font-size: 15px;
@@ -1364,7 +1399,7 @@ aside h5{
     margin-right: 15px;
   }
   
-}
+  }
 
 
 .checkboxes{
