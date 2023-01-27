@@ -1358,6 +1358,7 @@ aside h5{
   .fishes{
     width: 55px !important;
     height: 55px !important;
+    margin-bottom: -70px;
   
   }
   footer{
@@ -1377,7 +1378,12 @@ aside h5{
   min-height: 30vh !important;
   display: flex;
   gap: 5px;
-  background-color: aqua;
+ 
+}
+
+.gallery{
+  width: 112px;
+ 
 }
 
 }
