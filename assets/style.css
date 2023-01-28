@@ -1145,10 +1145,12 @@ aside {
   min-height: 100vh;
   flex-direction: column;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   position: fixed;
-  padding-top: 90px;
+ 
   align-items: center;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 /* 
 //////////////////EMPIEZA LA CARD///////////////// */
@@ -1368,6 +1370,7 @@ aside h5 {
 
   gap: 5px;
   margin-bottom: 10px;
+  margin-top: 12px;
 }
 
 form {
@@ -1406,18 +1409,20 @@ input {
 
 
 .buttoncontainer{
-  width: 260px;
+  width: 120px;
   
   display: flex;
   /* margin-left: 55px; */
-  gap: 35px;
+  gap: 40px;
   
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
  
   margin-bottom: 15px;
-  margin-top: 10px;
+  margin-top: 5px;
+
+  
 }
 
 
@@ -1425,16 +1430,20 @@ input {
   background-color: transparent;
   border: none;
   padding: 0;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .custom-button img {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   object-fit: cover;
   /* -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%) */
-border-radius: 8px;
+border-radius: 5px;
 }
 
 .custom-button span {
@@ -1442,7 +1451,18 @@ border-radius: 8px;
   margin-left: 8px;
   font-family: "Nunito", sans-serif;
   color: #edf1f1;
-  font-weight: 700;
-  font-size: 12px;
-  width: 60px;
+  font-weight: 400;
+  font-size: 10px;
+  width: 150px;
+}
+
+.containerdebuttoncontainer{
+  display: flex;
+  justify-content: center;
+  width: 280px;
+ 
+  margin-left: 62px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
