@@ -907,7 +907,7 @@ body {
 
   background: url(./images/sushi/sushi2.jpg);
   background-size: cover;
-  background-attachment: fixed ;
+  background-attachment: fixed;
   background-position: center;
   background-position: 70px -900px;
   background-size: contain;
@@ -923,7 +923,7 @@ body {
 
   background: url(./images/sushi/sushi1.jpg);
   background-size: cover;
-  background-attachment: fixed ;
+  background-attachment: fixed;
   background-position: center;
   background-position: -60px -0px;
   background-size: contain;
@@ -939,7 +939,7 @@ body {
   background: url(./images/sushi/sushi3.jpg);
 
   background-size: contain;
-  background-attachment: fixed ;;
+  background-attachment: fixed;
   background-position: center;
   background-position: -100px -900px;
   filter: grayscale(0%) saturate(150%);
@@ -953,8 +953,8 @@ body {
   /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
 
   background: url(./images/sushi/sushi6.jpg);
-  background-size: contain ;
-  background-attachment: fixed ;
+  background-size: contain;
+  background-attachment: fixed;
   background-position: center;
   background-position: 380px -900px;
   filter: grayscale(90%);
@@ -1115,7 +1115,7 @@ footer {
 /* ///////////////////////////MENU STARTS//////////////////////////// */
 .contmenu {
   height: fit-content;
-  display: flex;  
+  display: flex;
   flex-direction: row;
 }
 .menumain {
@@ -1123,35 +1123,32 @@ footer {
   width: 75%;
 
   background-image: url(/assets/images/ruidoshop.jpg);
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:40px;
+  padding-top: 40px;
   gap: 35px;
   flex-wrap: wrap;
 }
-.asidecontainer{
+.asidecontainer {
   width: 25%;
   min-height: 100vh;
   z-index: 150;
-  
 }
 aside {
   width: 25%;
-  
 
   background-image: url(/assets/images/ruidoshop3.jpg);
- 
- 
- gap: 20px;
+
+  gap: 20px;
   min-height: 100vh;
   flex-direction: column;
   display: flex;
   justify-content: flex-start;
   position: fixed;
-  padding-top: 40px;
- align-items: center;
+  padding-top: 90px;
+  align-items: center;
 }
 /* 
 //////////////////EMPIEZA LA CARD///////////////// */
@@ -1170,86 +1167,77 @@ aside {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.cardimage{
-  
+.cardimage {
   height: 200px;
   border-radius: 5px 5px 5px 5px;
-
 }
 
-.cardimage img{
- width: 100%;
- height: 100%;
- object-fit: cover;
- border-radius: 5px 5px 0px 0px;
+.cardimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
 }
 
-.descriptioncontainercard{
-  
+.descriptioncontainercard {
   width: 100%;
   padding: 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 .card h3 {
-  
   height: 20px;
- 
-  
+
   font-size: 18px;
-  font-family:  'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  
- ;
-  
 }
 
-.descriptioncontainercard p{
+.descriptioncontainercard p {
   font-size: 12px;
-  font-family:  'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   padding-right: 10px;
 
-height: 95px;
-font-weight: 400;
-border-bottom: 1px solid rgb(212, 211, 211);
-overflow: auto;}
+  height: 95px;
+  font-weight: 400;
+  border-bottom: 1px solid rgb(212, 211, 211);
+  overflow: auto;
+}
 
 .descriptioncontainercard p::-webkit-scrollbar {
-  width: 5px;
-  ; /* Tamaño de la barra de desplazamiento */
-  background-color: #F5F5F5; /* Color de fondo */
+  width: 5px; /* Tamaño de la barra de desplazamiento */
+  background-color: #f5f5f5; /* Color de fondo */
 }
 
 .descriptioncontainercard p::-webkit-scrollbar-thumb {
   background-color: #888888;
-  height: -2px /* Color del cursor */
+  height: -2px; /* Color del cursor */
 }
-  .pricecard{
-    width: 100%;
-    padding: 2px;
-    font-family: 'Raleway', sans-serif;
-    border: none;
-    border-radius: 4px;
-    font-weight: 400;
-    
-    color: rgb(36, 35, 35);
-    height: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: -5px;
-    font-size: 12px;
-    padding: 10px;
-   font-weight: 700;
-    border: 1px solid rgb(199, 195, 195);
-  }
-.descriptioncontainercard button{
+.pricecard {
+  width: 100%;
+  padding: 2px;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+
+  color: rgb(36, 35, 35);
+  height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  font-size: 12px;
+  padding: 10px;
+  font-weight: 700;
+  border: 1px solid rgb(199, 195, 195);
+}
+.descriptioncontainercard button {
   width: 100%;
   padding: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -1260,180 +1248,129 @@ overflow: auto;}
   cursor: pointer;
 }
 
-.descriptioncontainercard button:hover{
- 
+.descriptioncontainercard button:hover {
   background-color: rgb(68, 68, 67);
-  color: rgb(226, 37, 62); 
+  color: rgb(226, 37, 62);
   font-weight: 800;
-
-
-  
 }
-
-
 
 /* /////////////////////TERMINACARD////////////////////////*/
 
-
-
-
-
-
-
 @media only screen and (max-width: 1100px) {
- 
   .menumain {
-  
     width: 65%;
-  
   }
-  .asidecontainer{
+  .asidecontainer {
     width: 35%;
-  
-    
   }
   aside {
     width: 35%;
-  
   }
 }
 
 @media only screen and (max-width: 750px) {
- 
-
   .contmenu {
     height: fit-content;
-    display: flex;  
+    display: flex;
     flex-direction: column;
   }
 
   .menumain {
-  min-height: 100vh;
-  width: 100%;
-   
-  
+    min-height: 100vh;
+    width: 100%;
   }
-  .asidecontainer{
-    
+  .asidecontainer {
     min-height: 20vh;
     width: 100%;
-  
-    
   }
   aside {
-
-  min-height: 20vh;
-  width: 100%;
-  z-index: 100;
-  
+    min-height: 20vh;
+    width: 100%;
+    z-index: 100;
   }
 }
 
-aside h5{
+aside h5 {
   color: white;
   margin-left: 80px;
   font-size: 23px;
-  font-weight: 700;  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
 }
 
-#searchbar1{
+#searchbar1 {
   border-radius: 8px;
   border: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   padding: 7px;
   width: 245px;
   height: 30px;
   font-size: 12px;
   margin-left: 80px;
-  
+
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  
 }
 
 @media only screen and (max-width: 375px) {
- 
-  .fishes{
+  .fishes {
     width: 55px !important;
     height: 55px !important;
     margin-bottom: -60px;
-  
   }
-  footer{
-   
+  footer {
     min-height: 10vh;
     z-index: 20000;
   }
 
-  
-.image4{
-  margin-bottom: 0px !important;
+  .image4 {
+    margin-bottom: 0px !important;
+  }
 
+  #image-track {
+    min-height: 30vh !important;
+    display: flex;
+    gap: 5px;
+  }
 
+  .gallery {
+    width: 152px;
+    position: absolute;
+    right: 20px;
+  }
 }
-
-#image-track{
-  min-height: 30vh !important;
-  display: flex;
-  gap: 5px;
- 
-}
-
-.gallery{
-  width: 152px;
-  position: absolute;
-  right: 20px;
- 
-}
-
-}
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 1450px) {
- aside h5{
-  font-size: 15px;
-  margin-right: 10px;
- }
-  #searchbar1{
+  aside h5 {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  #searchbar1 {
     width: 180px;
     font-size: 12px;
     margin-right: 15px;
   }
-  
-  }
-
-
-.checkboxes{
-  width: 300px;
-  height: 50px;
-  
-
-;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin-left: 110px;
-flex-wrap: wrap;
-align-content: center;
-
-gap: 5px;
-margin-bottom: 10px;
-
 }
 
+.checkboxes {
+  width: 300px;
+  height: 50px;
 
-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px;
+  flex-wrap: wrap;
+  align-content: center;
+
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+form {
   margin-left: 10px;
   width: 120px;
 
@@ -1442,16 +1379,15 @@ form{
 }
 
 form label {
-  font-family:  'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: azure;
   font-size: 12px;
   font-weight: 600;
-  
-  font-family: 'Nunito', sans-serif;
+
+  font-family: "Nunito", sans-serif;
 }
 
-
-input{
+input {
   accent-color: rgb(248, 246, 246);
 }
 
@@ -1459,16 +1395,54 @@ input{
   background-color: rgb(65, 63, 63);
   border-color: transparent;
   cursor: pointer;
- 
- 
 }
 .form-check-input {
   background-color: #edf1f1;
   border-color: rgb(199, 192, 192);
- 
-  
+
   transition-duration: 430ms;
   cursor: pointer;
+}
+
+
+.buttoncontainer{
+  width: 260px;
   
+  display: flex;
+  /* margin-left: 55px; */
+  gap: 35px;
   
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+ 
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+
+.custom-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.custom-button img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  /* -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%) */
+border-radius: 8px;
+}
+
+.custom-button span {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: "Nunito", sans-serif;
+  color: #edf1f1;
+  font-weight: 700;
+  font-size: 12px;
+  width: 60px;
 }
