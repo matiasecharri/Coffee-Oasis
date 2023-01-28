@@ -50,3 +50,5 @@ Today was very productive, i think tomorrow is finally Javascript day, i have to
 Day7.5: Relax day, no code
 
 Day8: Searchbar added, photos added, checkboxadded.
+Need to create a JSON.api to consume and create the 
+shop sections.
