@@ -1685,19 +1685,22 @@ aside{
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 1px;
-    min-height: 28vh !important;
+    min-height: 35vh !important;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10px;
     background-image: none;
-    background-color: rgba(66, 66, 66, 0.253);
+    background-color: rgba(43, 41, 41, 0.253);
     backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
+border-radius: 10px;
+padding-top: 35px;
   }
   
   #searchbar1{
     width: 350px;
     margin-left: 15px;
+   
   }
   
     }
