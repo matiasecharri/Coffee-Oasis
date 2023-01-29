@@ -1685,7 +1685,7 @@ aside{
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 1px;
-    min-height: 35vh !important;
+    min-height: 28vh !important;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10px;
@@ -1694,7 +1694,7 @@ aside{
     backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border-radius: 10px;
-padding-top: 35px;
+padding-top: 45px;
   }
   
   #searchbar1{
