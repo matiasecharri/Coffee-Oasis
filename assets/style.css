@@ -1454,6 +1454,7 @@ border-radius: 5px;
   font-weight: 400;
   font-size: 10px;
   width: 150px;
+ 
 }
 
 .containerdebuttoncontainer{
@@ -1465,4 +1466,238 @@ border-radius: 5px;
   align-items: center;
   justify-content: center;
   gap: 15px;
+
+;
 }
+
+
+   
+  
+
+@media only screen and (max-width: 920px) {
+  aside{
+    width: 45%;
+  }
+   
+  
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  .buttoncontainer{
+    flex-direction: row;
+   
+    justify-content: center;
+    gap: 15px !important;
+    margin-left: 0px;
+    padding: 0px;
+    width: 150px;
+  
+   
+   
+  }
+
+  aside{
+    width: 100%;
+  }
+
+ 
+
+  .containerdebuttoncontainer{
+   
+    width: 350px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    gap: 35px !important;
+    align-items: center;
+    justify-content: center !important;
+    height: 65px;
+   
+   
+
+  }
+
+  .custom-button{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+  
+  }
+
+  .custom-button {
+    
+    border: none;
+    padding: 0;
+   
+    display: flex;
+    flex-direction: row;
+   
+    
+  }
+  
+  .custom-button img {
+   
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    /* -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%) */
+  border-radius: 180px;
+  }
+  
+  .custom-button span {
+  
+   
+    display: none;
+   
+  }
+  .checkboxes{
+    flex-direction: row;
+    background-color: aqua;
+    width: 100%;
+    gap: 10px;
+   display: none;
+  }
+
+form{
+  width: 60px;
+}
+
+aside h5{
+  display: none;
+}
+
+.asidecontainer{
+  min-height: 20vh;
+}
+aside{
+  
+  gap: 25px;
+  padding: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  min-height: 20vh !important;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+#searchbar1{
+  width: 350px;
+}
+
+  }
+
+
+
+
+  @media only screen and (max-width: 550px) {
+    .buttoncontainer{
+      flex-direction: row;
+     
+      justify-content: center;
+      gap: 15px !important;
+      margin-left: 0px;
+      padding: 0px;
+      width: 150px;
+    
+     
+     
+    }
+  
+    .containerdebuttoncontainer{
+     
+      width: 350px;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      margin-left: 0px;
+      gap: 35px !important;
+      align-items: center;
+      justify-content: center !important;
+      height: 65px;
+     
+     
+  
+    }
+  
+    .custom-button{
+      margin: 0px;
+      padding: 0px;
+      margin-left: 0px;
+    
+    }
+  
+    .custom-button {
+      
+      border: none;
+      padding: 0;
+     
+      display: flex;
+      flex-direction: row;
+     
+      
+    }
+    
+    .custom-button img {
+     
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      /* -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%) */
+    border-radius: 180px;
+    }
+    
+    .custom-button span {
+    
+     
+      display: none;
+     
+    }
+    .checkboxes{
+      flex-direction: row;
+      background-color: aqua;
+      width: 100%;
+      gap: 10px;
+     display: none;
+    }
+  
+  form{
+    width: 60px;
+  }
+  
+  aside h5{
+    display: none;
+  }
+  
+  .asidecontainer{
+    min-height: 20vh;
+  }
+  aside{
+    
+    gap: 12px;
+    padding: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    min-height: 23vh !important;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    background-image: none;
+    background-color: rgba(66, 66, 66, 0.253);
+    backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+  }
+  
+  #searchbar1{
+    width: 350px;
+    margin-left: 15px;
+  }
+  
+    }
