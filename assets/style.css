@@ -1676,7 +1676,7 @@ aside{
   }
   
   .asidecontainer{
-    min-height: 20vh;
+    min-height: 28vh;
   }
   aside{
     
@@ -1685,7 +1685,7 @@ aside{
     padding-top: 1px;
     padding-bottom: 1px;
     margin-bottom: 1px;
-    min-height: 23vh !important;
+    min-height: 28vh !important;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 10px;
