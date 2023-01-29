@@ -60,7 +60,7 @@ html {
   border-radius: 3px;
 }
 nav {
-  position: absolute;
+ 
   position: fixed;
   border-right: 1px rgba(209, 206, 206, 0.267) solid;
   background-color: rgb(245, 240, 240);
@@ -71,7 +71,7 @@ nav {
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 8vh;
+  width: 4vw;
   gap: 4px;
   align-content: center;
   justify-content: center;
@@ -329,7 +329,8 @@ h1 span {
   @media only screen and (max-width: 860px) {
     nav {
       height: 100%;
-      width: 8vh;
+      min-width: 9vw;
+      min-height: 10vh;
       flex-direction: column;
       justify-content: center;
     }
@@ -428,6 +429,7 @@ h1 span {
   nav {
     width: 100%;
     height: 8vh;
+  
     z-index: 200;
     flex-direction: row;
     gap: 20px;
@@ -1699,11 +1701,21 @@ border-radius: 10px;
 padding-top: 40px;
   }
 
-  
+  nav{
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  }
   #searchbar1{
     width: 350px;
     margin-left: 15px;
    
   }
   
+    }
+
+
+    .page-container {
+      overflow-y: scroll;
     }
