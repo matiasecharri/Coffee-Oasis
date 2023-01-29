@@ -329,7 +329,8 @@ h1 span {
   @media only screen and (max-width: 860px) {
     nav {
       height: 100%;
-      width: 8vh;
+      min-width: 9vw;
+      min-height: 10vh;
       flex-direction: column;
       justify-content: center;
     }
