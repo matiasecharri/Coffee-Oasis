@@ -52,3 +52,6 @@ Day7.5: Relax day, no code
 Day8: Searchbar added, photos added, checkboxadded.
 Need to create a JSON.api to consume and create the 
 shop sections.
+
+
+Day9: Mediaqueries for mobile done, need to do some adjust in 1366x768 resolution.
