@@ -569,6 +569,76 @@ let food = [
     veggie: false,
     sweet: false,
   },
+  {
+    id: 42,
+    categorie: "extras",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/DILx8nlV6F8-gZ3HsIrGxBriC8c12IFA.jpg",
+    name: "Meat Dumplings",
+    description:
+      "Fried meat rolls wrapped in rice paper.",
+    pricex5: 5,
+    sells: 20,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 43,
+    categorie: "extras",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/EHSXRLxuYA9X3MY0JKppEXeNhijGFd0z.jpg",
+    name: "Veggie Dumplings",
+    description:
+      "Fried vegetable rolls wrapped in rice paper.",
+    pricex5: 5,
+    sells: 20,
+    veggie: true,
+    sweet: false,
+  },
+  {
+    id: 44,
+    categorie: "extras",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/_VCMHilUTBagZKaQZLrs6557XjQep4_w.jpg",
+    name: "Battered Langoustines",
+    description:
+      "Panko battered prawns with smoked teriyaki sauce.",
+    pricex5: 12,
+    sells: 20,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 45,
+    categorie: "extras",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/vYJWIVQKioOXpGGhinn2AK0uhbEkmuuJ.jpg",
+    name: "Tandoori Chicken",
+    description:
+      "Chicken Sticks marinated in Tandori, Battered in Panko and Sesame Seeds, accompanied by Barbecue Sauce.",
+    pricex5: 10,
+    sells: 20,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 46,
+    categorie: "extras",
+    type: "cold",
+    photo:
+      "https://lascameliaslp.com.ar/wp-content/uploads/franui1-dd4cb0d3eca985186116202365818405-1024-1024.png",
+    name: "Rapanui",
+    description:
+      "Delicious chocolate bites filled with strawberries.",
+    pricex5: 9.5,
+    sells: 200,
+    veggie: true,
+    sweet: true,
+  },
   
 ];
 
