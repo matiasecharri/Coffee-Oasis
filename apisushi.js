@@ -443,6 +443,90 @@ let food = [
     veggie: true,
     sweet: false,
   },
+  {
+    id: 33,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/qCpjaLSlUAxBncP-FV-Kt_zTqNwlrtUg.jpg",
+    name: "Poke Salmon Fresh",
+    description:
+      "Fresh salmon salad, fresh dill, lemon zest, sesame oil, avocado, phila cheese, on gohan rice.",
+    pricex5: 8.5,
+    sells: 140,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 34,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/-e7Lk4THSYePoYVEyC5XLu7jFAxF4Pra.jpg",
+    name: "Poke Salmon",
+    description:
+      "Fresh salad of salmon, avocado, Phila cheese, cabbage and carrot on rice.",
+    pricex5: 8,
+    sells: 140,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 35,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/3dc6eb1bef2170d1e99235d7806fc11d9b79dc26.png",
+    name: "Poke Salmango",
+    description:
+      "Fresh salmon and mango salad, passion fruit sauce, brunoise red onion and crispy avocado sweet potato, phila cheese, on gohan rice.",
+    pricex5: 12.5,
+    sells: 140,
+    veggie: false,
+    sweet: true,
+  },
+  {
+    id: 36,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/JD-lc_IyHwY8gwtwyXt39mW_YsZBsIZv.jpg",
+    name: "Poke Tijuana",
+    description:
+      "Fresh breaded chicken salad, teriyaki sauce, guacamole and Phila cheese, on gohan rice.",
+    pricex5: 8,
+    sells: 40,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 33,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/JEFB5T5ubp_NRWZASCQmSQqdbn0MxV9z.jpg",
+    name: "Poke Prawns",
+    description:
+      "Fresh salad of battered prawns, avocado, Phila cheese, cabbage and carrot on rice .",
+    pricex5: 6.5,
+    sells: 80,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 33,
+    categorie: "salad",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/c68lxpLo4dUZ3vsFcGhansML66Effr3P.jpg",
+    name: "Poke Veggie",
+    description:
+      "Fresh seasonal vegetable salad sautéed in teriyaki sauce and phila cheese, over gohan rice.",
+    pricex5: 6.5,
+    sells: 30,
+    veggie: true,
+    sweet: false,
+  },
 ];
 
 console.log(food);
