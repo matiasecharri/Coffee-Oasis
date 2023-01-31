@@ -500,7 +500,7 @@ let food = [
     sweet: false,
   },
   {
-    id: 33,
+    id: 37,
     categorie: "salad",
     type: "cold",
     photo:
@@ -514,7 +514,7 @@ let food = [
     sweet: false,
   },
   {
-    id: 33,
+    id: 38,
     categorie: "salad",
     type: "cold",
     photo:
