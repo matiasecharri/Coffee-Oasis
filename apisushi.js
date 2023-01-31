@@ -639,6 +639,92 @@ let food = [
     veggie: true,
     sweet: true,
   },
+  {
+    id: 47,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/RFU7_lJugJcXl3P8dZD44JJMhHSmd9_o.jpg",
+    name: "Soy Sauce",
+    description:
+      "Our classic sauce goes well with any flavor.",
+    pricex5: 1.2,
+    sells: 500,
+    veggie: true,
+    sweet: false,
+  },
+  {
+    id: 48,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/nceehLWSZN0Cri7_XH_TxHScKt56QNBl.jpg",
+    name: "Wasabi",
+    description:
+      "Do you love the taste of Wasabi? More spicy please.",
+    pricex5: 0.5,
+    sells: 80,
+    veggie: true,
+    sweet: false,
+  },
+  {
+    id: 49,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/L41hV9aV8J1an_N2pHTFsquS2b_JszOP.jpg",
+    name: "Guacamole",
+    description:
+      "For the most intrepid tasters.",
+    pricex5: 1.8,
+    sells: 80,
+    veggie: true,
+    sweet: false,
+  },
+  {
+    id: 50,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/qEBZdLLxGR328UdEJ-qbIk1UID38cuvf.jpg",
+    name: "Nippon Sauce",
+    description:
+      "Spicy and sweet, something different.",
+    pricex5: 1.9,
+    sells: 80,
+    veggie: true,
+    sweet: true,
+  },
+  {
+    id: 51,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/hfQ62zqraHn2cz-K9FsInrWynfDC_k1V.jpg",
+    name: "Ginger",
+    description:
+      "Ginger slices in vinegar.",
+    pricex5: 0.8,
+    sells: 80,
+    veggie: true,
+    sweet: false,
+  },
+  {
+    id: 52,
+    categorie: "sauces",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/9P-Y3-EQXWJDgEGSEIZEFsgvP8MLb6E7.jpg",
+    name: "Teriyaki Sauce",
+    description:
+      "Sweetened and smoked soy sauce, with toasted sesame seeds.",
+    pricex5: 0.8,
+    sells: 80,
+    veggie: true,
+    sweet: true,
+  },
+  
+  
   
 ];
 
