@@ -131,8 +131,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/5N-f-Vd9O56Qlfy4HHDMiDXq-a8tDzj3.jpg",
     name: "Geishas Salmon",
-    description:
-      "Salmon Geishas stuffed with Phila cheese with Avocado.",
+    description: "Salmon Geishas stuffed with Phila cheese with Avocado.",
     pricex5: 15.5,
     sells: 250,
     veggie: false,
@@ -161,7 +160,7 @@ let food = [
     name: "Philadelphia",
     description:
       "Roll stuffed with salmon and Philadelphia cheese, covered with toasted sesame.",
-    pricex5:8.5,
+    pricex5: 8.5,
     sells: 350,
     veggie: false,
     sweet: false,
@@ -175,7 +174,7 @@ let food = [
     name: "New York Classic",
     description:
       "Roll stuffed with salmon and avocado, covered with toasted sesame",
-    pricex5:8.5,
+    pricex5: 8.5,
     sells: 350,
     veggie: false,
     sweet: false,
@@ -189,7 +188,7 @@ let food = [
     name: "Shrimp Vocado",
     description:
       "Roll stuffed with prawns coated in Philadelphia cheese, covered with avocado.",
-    pricex5:7.5,
+    pricex5: 7.5,
     sells: 350,
     veggie: false,
     sweet: false,
@@ -203,7 +202,7 @@ let food = [
     name: "Phila Tuna",
     description:
       "Classic Roll stuffed with tuna, mayonnaise, green, ground chili, and finlandia.",
-    pricex5:7.5,
+    pricex5: 7.5,
     sells: 60,
     veggie: false,
     sweet: false,
@@ -217,7 +216,7 @@ let food = [
     name: "Buenos Aires",
     description:
       "Roll stuffed with Philadelphia cheese and battered prawns covered with a thin layer of salmon",
-    pricex5:7.8,
+    pricex5: 7.8,
     sells: 550,
     veggie: false,
     sweet: false,
@@ -229,9 +228,8 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/9MZFr7cxzHqeSCqHP_tgrb08Ki8rKhAI.jpg",
     name: "Premium Sashimi",
-    description:
-      "Select cuts of the freshest salmon.",
-    pricex5:18.8,
+    description: "Select cuts of the freshest salmon.",
+    pricex5: 18.8,
     sells: 1550,
     veggie: false,
     sweet: false,
@@ -245,7 +243,7 @@ let food = [
     name: "Premium Sashimi",
     description:
       "Roll stuffed with panko-coated prawns, with Philadelphia cheese, covered with chives and topped with sweet potato fries.",
-    pricex5:7.8,
+    pricex5: 7.8,
     sells: 90,
     veggie: false,
     sweet: true,
@@ -259,7 +257,7 @@ let food = [
     name: "Paris",
     description:
       "Crepe-type roll stuffed with salmon, Philadelphia cheese, topped with peanut praline.",
-    pricex5:7.8,
+    pricex5: 7.8,
     sells: 20,
     veggie: false,
     sweet: true,
@@ -273,7 +271,7 @@ let food = [
     name: "Philacuya",
     description:
       "Roll stuffed with avocado and Phila cheese, on the outside a fresh salmon tapa, crowned with fried sweet potato and passion fruit sauce.",
-    pricex5:6.8,
+    pricex5: 6.8,
     sells: 250,
     veggie: false,
     sweet: true,
@@ -287,7 +285,7 @@ let food = [
     name: "Napoli",
     description:
       "Roll stuffed with battered prawns and Philadelphia cheese with sweet and sour sauce of honey and mustard.",
-    pricex5:7.5,
+    pricex5: 7.5,
     sells: 250,
     veggie: false,
     sweet: true,
@@ -301,7 +299,7 @@ let food = [
     name: "Clerck",
     description:
       "Roll stuffed with salmon cooked with honey and mustard, Phila cheese and sweet potato threads fried on the outside.",
-    pricex5:9.5,
+    pricex5: 9.5,
     sells: 50,
     veggie: false,
     sweet: true,
@@ -313,9 +311,8 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/zf4Ws1CJ6fDsLV1BySmk8bVbEhKJw8Xb.jpg",
     name: "California",
-    description:
-      "Roll stuffed with kanikama with Philadelphia and avocado.",
-    pricex5:6.5,
+    description: "Roll stuffed with kanikama with Philadelphia and avocado.",
+    pricex5: 6.5,
     sells: 30,
     veggie: false,
     sweet: false,
@@ -329,7 +326,7 @@ let food = [
     name: "Persia",
     description:
       "Roll stuffed with salmon, Philadelphia and green covered with toasted sesame.",
-    pricex5:9.5,
+    pricex5: 9.5,
     sells: 60,
     veggie: false,
     sweet: false,
@@ -343,7 +340,7 @@ let food = [
     name: "Nippon Bites",
     description:
       "Tamago roll stuffed with rice, Philadelphia and avocado wrapped in pink salmon.",
-    pricex5:14.5,
+    pricex5: 14.5,
     sells: 1250,
     veggie: false,
     sweet: false,
@@ -357,9 +354,93 @@ let food = [
     name: "Teriyaki Salmon",
     description:
       "Grilled seared salmon with Teriyaki sauce, sautéed vegetables and rice.",
-    pricex5:30.5,
-    sells:20,
+    pricex5: 30.5,
+    sells: 20,
     veggie: false,
+    sweet: false,
+  },
+  {
+    id: 27,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/ruCTLIWCVrbTsHloNsGXsTAVFI2gUtk4.jpg",
+    name: "Teriyaki Quinoa",
+    description:
+      "Grilled seared salmon with Teriyaki sauce, sautéed vegetables and quinoa.",
+    pricex5: 32.5,
+    sells: 18,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 28,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/hf8pLJcZrTJQjnuAHgJp3F2aNB03qqh2.jpg",
+    name: "Pad Thai",
+    description:
+      "Stir fried prawns over thin rice noodles sautéed with egg and vegetables. Classic Thai.",
+    pricex5: 24,
+    sells: 30,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 29,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/ej_2Z321RIp2y5rYjbZ4J1yQVI8d2gwn.jpg",
+    name: "Shogayaki Wok",
+    description:
+      "Pork bondiola wok marinated in ginger, accompanied with gohan rice and coleslaw.",
+    pricex5: 18.5,
+    sells: 150,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 30,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/s9bgDXflzZOnw8dsgqJu3zq2_jgLVnOM.jpg",
+    name: "Chicken Curry",
+    description:
+      "Chicken curry slightly spicy with coconut cream, topped with slices of toasted almonds, accompanied by jasmine rice.",
+    pricex5: 16.5,
+    sells: 200,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 31,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/tWowhIMMg-LbHGaXjVfKTvX3Gfuhgqkr.jpg",
+    name: "Xao Rice",
+    description:
+      "Nutritious dish of Vietnamese origin, which combines tenderloin and vegetables sautéed in teriyaki sauce, accompanied by gohan rice and wedge potatoes.",
+    pricex5: 25.5,
+    sells: 30,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 32,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/ZLIDx-lm_dDOs1Me7q7geURaq657oa92.jpg",
+    name: "Chop Suey Veggie",
+    description:
+      "Sautéed vegetables in teriyaki sauce, topped with cashew nuts and green onion, on a quinoa mattress.",
+    pricex5: 18.5,
+    sells: 40,
+    veggie: true,
     sweet: false,
   },
 ];
