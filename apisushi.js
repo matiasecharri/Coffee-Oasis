@@ -527,6 +527,49 @@ let food = [
     veggie: true,
     sweet: false,
   },
+  {
+    id: 39,
+    categorie: "combo",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/huF4HjMTmdhSSiAl3WCuZERCgkW-MmAT.jpg",
+    name: "Kuro 黒",
+    description:
+      "To give yourself a full taste! Premium combo to try a little of everything.",
+    pricex5: 50,
+    sells: 80,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 40,
+    categorie: "combo",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/LnOCD9fZo7JaCKJL7A4T6D8k9ZiMsHi7.jpg",
+    name: "Arasaka アラスカ",
+    description:
+      "Delicious mix of premium flavors.",
+    pricex5: 75,
+    sells: 2530,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 41,
+    categorie: "combo",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/3a-aaRoHRvuASTAR8khagKeGUhSqzDR3.jpg",
+    name: "Tokyo 東京",
+    description:
+      "Delicious and cheap, with a little bit of everything.",
+    pricex5: 45,
+    sells: 20,
+    veggie: false,
+    sweet: false,
+  },
+  
 ];
 
 console.log(food);
