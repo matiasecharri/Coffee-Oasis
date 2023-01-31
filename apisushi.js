@@ -292,6 +292,76 @@ let food = [
     veggie: false,
     sweet: true,
   },
+  {
+    id: 22,
+    categorie: "roll",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/5On_tR7xuLYzEHWU_hmOkAMcZu1WFTa1.jpg",
+    name: "Clerck",
+    description:
+      "Roll stuffed with salmon cooked with honey and mustard, Phila cheese and sweet potato threads fried on the outside.",
+    pricex5:9.5,
+    sells: 50,
+    veggie: false,
+    sweet: true,
+  },
+  {
+    id: 23,
+    categorie: "roll",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/zf4Ws1CJ6fDsLV1BySmk8bVbEhKJw8Xb.jpg",
+    name: "California",
+    description:
+      "Roll stuffed with kanikama with Philadelphia and avocado.",
+    pricex5:6.5,
+    sells: 30,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 24,
+    categorie: "roll",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/NBdckZ0hR4GtjYRMCRQKj2DkzVnRAGDY.jpg",
+    name: "Persia",
+    description:
+      "Roll stuffed with salmon, Philadelphia and green covered with toasted sesame.",
+    pricex5:9.5,
+    sells: 60,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 25,
+    categorie: "roll",
+    type: "cold",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/JVIR6_PkCaj8am-0-eZF9gFaW-tjAJZB.jpg",
+    name: "Nippon Bites",
+    description:
+      "Tamago roll stuffed with rice, Philadelphia and avocado wrapped in pink salmon.",
+    pricex5:14.5,
+    sells: 1250,
+    veggie: false,
+    sweet: false,
+  },
+  {
+    id: 26,
+    categorie: "gourmet",
+    type: "hot",
+    photo:
+      "https://sushipopimg.s3.amazonaws.com/productos/z0Y6hcFNzWJoFaTXmGIGITU0Bcc7jXF1.jpg",
+    name: "Teriyaki Salmon",
+    description:
+      "Grilled seared salmon with Teriyaki sauce, sautéed vegetables and rice.",
+    pricex5:30.5,
+    sells:20,
+    veggie: false,
+    sweet: false,
+  },
 ];
 
 console.log(food);
