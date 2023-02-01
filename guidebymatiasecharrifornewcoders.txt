@@ -57,3 +57,5 @@ shop sections.
 Day9: Mediaqueries for mobile done, need to do some adjust in 1366x768 resolution.
 
 Day10: The API is created, next step is to translate the api to JSON api to get the items correctly.
+
+Day10.5: Today im not coding, was an exclusive day for update my cv and pay attention to linkedin, tommorrow Day11.
