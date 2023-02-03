@@ -548,8 +548,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/LnOCD9fZo7JaCKJL7A4T6D8k9ZiMsHi7.jpg",
     name: "Arasaka アラスカ",
-    description:
-      "Delicious mix of premium flavors.",
+    description: "Delicious mix of premium flavors.",
     pricex5: 75,
     sells: 2530,
     veggie: false,
@@ -562,8 +561,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/3a-aaRoHRvuASTAR8khagKeGUhSqzDR3.jpg",
     name: "Tokyo 東京",
-    description:
-      "Delicious and cheap, with a little bit of everything.",
+    description: "Delicious and cheap, with a little bit of everything.",
     pricex5: 45,
     sells: 20,
     veggie: false,
@@ -576,8 +574,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/DILx8nlV6F8-gZ3HsIrGxBriC8c12IFA.jpg",
     name: "Meat Dumplings",
-    description:
-      "Fried meat rolls wrapped in rice paper.",
+    description: "Fried meat rolls wrapped in rice paper.",
     pricex5: 5,
     sells: 20,
     veggie: false,
@@ -590,8 +587,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/EHSXRLxuYA9X3MY0JKppEXeNhijGFd0z.jpg",
     name: "Veggie Dumplings",
-    description:
-      "Fried vegetable rolls wrapped in rice paper.",
+    description: "Fried vegetable rolls wrapped in rice paper.",
     pricex5: 5,
     sells: 20,
     veggie: true,
@@ -604,8 +600,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/_VCMHilUTBagZKaQZLrs6557XjQep4_w.jpg",
     name: "Battered Langoustines",
-    description:
-      "Panko battered prawns with smoked teriyaki sauce.",
+    description: "Panko battered prawns with smoked teriyaki sauce.",
     pricex5: 12,
     sells: 20,
     veggie: false,
@@ -632,8 +627,7 @@ let food = [
     photo:
       "https://lascameliaslp.com.ar/wp-content/uploads/franui1-dd4cb0d3eca985186116202365818405-1024-1024.png",
     name: "Rapanui",
-    description:
-      "Delicious chocolate bites filled with strawberries.",
+    description: "Delicious chocolate bites filled with strawberries.",
     pricex5: 9.5,
     sells: 200,
     veggie: true,
@@ -646,8 +640,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/RFU7_lJugJcXl3P8dZD44JJMhHSmd9_o.jpg",
     name: "Soy Sauce",
-    description:
-      "Our classic sauce goes well with any flavor.",
+    description: "Our classic sauce goes well with any flavor.",
     pricex5: 1.2,
     sells: 500,
     veggie: true,
@@ -660,8 +653,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/nceehLWSZN0Cri7_XH_TxHScKt56QNBl.jpg",
     name: "Wasabi",
-    description:
-      "Do you love the taste of Wasabi? More spicy please.",
+    description: "Do you love the taste of Wasabi? More spicy please.",
     pricex5: 0.5,
     sells: 80,
     veggie: true,
@@ -674,8 +666,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/L41hV9aV8J1an_N2pHTFsquS2b_JszOP.jpg",
     name: "Guacamole",
-    description:
-      "For the most intrepid tasters.",
+    description: "For the most intrepid tasters.",
     pricex5: 1.8,
     sells: 80,
     veggie: true,
@@ -688,8 +679,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/qEBZdLLxGR328UdEJ-qbIk1UID38cuvf.jpg",
     name: "Nippon Sauce",
-    description:
-      "Spicy and sweet, something different.",
+    description: "Spicy and sweet, something different.",
     pricex5: 1.9,
     sells: 80,
     veggie: true,
@@ -702,8 +692,7 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/hfQ62zqraHn2cz-K9FsInrWynfDC_k1V.jpg",
     name: "Ginger",
-    description:
-      "Ginger slices in vinegar.",
+    description: "Ginger slices in vinegar.",
     pricex5: 0.8,
     sells: 80,
     veggie: true,
@@ -716,16 +705,12 @@ let food = [
     photo:
       "https://sushipopimg.s3.amazonaws.com/productos/9P-Y3-EQXWJDgEGSEIZEFsgvP8MLb6E7.jpg",
     name: "Teriyaki Sauce",
-    description:
-      "Sweetened and smoked soy sauce, with toasted sesame seeds.",
+    description: "Sweetened and smoked soy sauce, with toasted sesame seeds.",
     pricex5: 0.8,
     sells: 80,
     veggie: true,
     sweet: true,
   },
-  
-  
-  
 ];
 
 console.log(food);
