@@ -1,4 +1,9 @@
 
+console.log("Nipon Bites fue diseñado y codeado por Matias Echarri");
+console.log("Nipon Bites was designed and coded by Matias Echarri");
+console.log("https://github.com/matiasecharri");
+
+//// Esto es para aplicarle link a las imagenes triangulares, nada más que eso jaja, no me acuerdo que problema tenia que no funcionaba
 let misDivs = document.getElementsByClassName("mi-clase");
 for (let i = 0; i < misDivs.length; i++) {
   misDivs[i].addEventListener("click", function(){
@@ -21,7 +26,6 @@ const observer = new IntersectionObserver(function (entries) {
   }
 });
 
-console.log("Nipon Bites fue diseñado y codeado por Matias Echarri");
 // Comienza a observar el elemento
 observer.observe(animatedElement);
 
@@ -36,8 +40,6 @@ const observer2 = new IntersectionObserver(function (entries) {
     }, 1500); // Retrasa la animación 2 segundos
   }
 });
-
-console.log("Nipon Bites was designed and coded by Matias Echarri");
-console.log("https://github.com/matiasecharri");
 // Comienza a observar el elemento
 observer2.observe(animatedElement2);
+
