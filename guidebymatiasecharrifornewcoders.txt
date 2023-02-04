@@ -62,4 +62,15 @@ Day10.5: Today im not coding, was an exclusive day for update my cv and pay atte
 
 Day10.6: Today im not coding, was a day for apply jobs tomorrow oficially Day11 i promise.
 
-Day11: JSON Created.
+Day11: JSON Created and API consumed, all cards are printed now, this is how u can get some api in your JS
+
+async function obteniendoMasCromo() {
+  let davidMartinezConsume = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+  davidMartinezConsume = await davidMartinezConsume.json();
+  console.log(davidMartinezConsume)
+}
+obteniendoMasCromo()
+
+Remember u need yo use "async function" await fetch and await 

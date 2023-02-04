@@ -9,6 +9,7 @@
 
 // 4: Inicializar la funcion asincrona.
 
+//CONSUMIENDO API-----------
 async function consumirApi() {
   let containercards = document.getElementById("menumain");
   containercards.innerHTML = `<div class="dot-spinner">
@@ -31,6 +32,9 @@ async function consumirApi() {
 }
 consumirApi();
 
+//----------------------------
+//IMPRESORA GENERAL-----------
+
 let containercards = document.getElementById("menumain");
 function printer(arreglo) {
   containercards.innerHTML = "";
@@ -49,3 +53,4 @@ function printer(arreglo) {
      </div>`;
   });
 }
+
