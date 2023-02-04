@@ -1,3 +1,6 @@
+//There is the full API, the API hosted in the website is a short version of this, why? because the host has a limit of 10.000 characters per API, and this full API is about 25000 characters, if you want you can replace the host to make it full version or use something like node.js.
+
+
 let food = [
   {
     id: 01,
