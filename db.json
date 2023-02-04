@@ -1,13 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "products": [
     {
       "id": 1,
@@ -117,7 +108,7 @@
       "veggie": false,
       "sweet": false
     },
-     {
+    {
       "id": 20,
       "categorie": "roll",
       "type": "cold",
@@ -165,7 +156,7 @@
       "veggie": false,
       "sweet": false
     },
-     {
+    {
       "id": 29,
       "categorie": "gourmet",
       "type": "hot",

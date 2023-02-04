@@ -1,17 +1,23 @@
-
 console.log("Nipon Bites fue diseñado y codeado por Matias Echarri");
 console.log("Nipon Bites was designed and coded by Matias Echarri");
 console.log("https://github.com/matiasecharri");
 
+async function dataPorApi() {
+  let dataApi = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+  dataApi = await dataApi.json();
+  console.log(dataApi);
+}
+dataPorApi()
+
 //// Esto es para aplicarle link a las imagenes triangulares, nada más que eso jaja, no me acuerdo que problema tenia que no funcionaba
 let misDivs = document.getElementsByClassName("mi-clase");
 for (let i = 0; i < misDivs.length; i++) {
-  misDivs[i].addEventListener("click", function(){
+  misDivs[i].addEventListener("click", function () {
     window.location.href = "https://nippon-bites.vercel.app/menu.html";
   });
 }
-
-
 
 // Selecciona el elemento que deseas animar
 const animatedElement = document.querySelector(".animado");
@@ -42,4 +48,3 @@ const observer2 = new IntersectionObserver(function (entries) {
 });
 // Comienza a observar el elemento
 observer2.observe(animatedElement2);
-
