@@ -109,6 +109,18 @@
       "sweet": false
     },
     {
+      "id": 17,
+      "categorie": "roll",
+      "type": "cold",
+      "photo": "https://sushipopimg.s3.amazonaws.com/productos/9MZFr7cxzHqeSCqHP_tgrb08Ki8rKhAI.jpg",
+      "name": "Premium Sashimi",
+      "description": "Select cuts of the freshest salmon.",
+      "pricex5": 18.8,
+      "sells": 1550,
+      "veggie": false,
+      "sweet": false
+      },
+    {
       "id": 20,
       "categorie": "roll",
       "type": "cold",
