@@ -10,30 +10,42 @@
 // 4: Inicializar la funcion asincrona.
 
 async function consumirApi() {
+  let containercards = document.getElementById("menumain");
+  containercards.innerHTML = `<div class="dot-spinner">
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+    <div class="dot-spinner__dot"></div>
+  </div>`;
+
   let nipponApi = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   nipponApi = await nipponApi.json();
-  console.log(nipponApi); // Aca en mi variable nipponApi tengo todos los datos de mi API listos para ser usados
+  console.log(nipponApi);
   printer(nipponApi);
 }
-consumirApi(); //Ejecuto consumir API
+consumirApi();
 
-//Definimos la función con la que vamos a imprimir, es importante que se ejecute dentro de la función async
 let containercards = document.getElementById("menumain");
 function printer(arreglo) {
-  for (i = 0; i < arreglo.length; i++) {
-    containercards.innerHTML += `<div class="card">
+  containercards.innerHTML = "";
+  arreglo.forEach((x) => {
+    containercards.innerHTML += `<div class="card" data-aos="fade-down" data-aos-duration="1200">
        <div class="cardimage">
-         <img src="${arreglo[i].photo}">
+         <img src="${x.photo}">
        </div>
        <div class="descriptioncontainercard">
-       <h3>${arreglo[i].name}</h3>
-       <p>${arreglo[i].description}     
+       <h3>${x.name}</h3>
+       <p>${x.description}     
        </p>
-       <div class="pricecard"> Price: ${arreglo[i].pricex5} USD</div>
+       <div class="pricecard"> Price: ${x.pricex5} USD</div>
        <button> 私を食べなさい</button>
      </div>
      </div>`;
-  }
+  });
 }
