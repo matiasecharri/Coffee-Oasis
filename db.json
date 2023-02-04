@@ -109,19 +109,6 @@
       "sweet": false
     },
     {
-      "id": 17,
-      "categorie": "roll",
-      "type": "cold",
-      "photo":
-        "https://sushipopimg.s3.amazonaws.com/productos/9MZFr7cxzHqeSCqHP_tgrb08Ki8rKhAI.jpg",
-      "name": "Premium Sashimi",
-      "description": "Select cuts of the freshest salmon.",
-      "pricex5": 18.8,
-      "sells": 1550,
-      "veggie": false,
-      "sweet": false
-    },
-    {
       "id": 20,
       "categorie": "roll",
       "type": "cold",
@@ -290,6 +277,18 @@
       "sweet": false
     },
     {
+      "id": 46,
+      "categorie": "extras",
+      "type": "cold",
+      "photo": "https://media.discordapp.net/attachments/763661782555426817/1071267915833294848/franui.png?width=717&height=489",
+      "name": "Rapanui",
+      "description": "Delicious chocolate bites filled with strawberries.",
+      "pricex5": 9.5,
+      "sells": 200,
+      "veggie": true,
+      "sweet": true
+    },
+    {
       "id": 47,
       "categorie": "sauces",
       "type": "cold",
@@ -310,18 +309,6 @@
       "description": "Sweetened and smoked soy sauce, with toasted sesame seeds.",
       "pricex5": 0.8,
       "sells": 80,
-      "veggie": true,
-      "sweet": true
-    },
-    {
-      "id": 46,
-      "categorie": "extras",
-      "type": "cold",
-      "photo": "https://media.discordapp.net/attachments/763661782555426817/1071267915833294848/franui.png?width=717&height=489",
-      "name": "Rapanui",
-      "description": "Delicious chocolate bites filled with strawberries.",
-      "pricex5": 9.5,
-      "sells": 200,
       "veggie": true,
       "sweet": true
     }
