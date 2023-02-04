@@ -119,7 +119,7 @@
       "sells": 1550,
       "veggie": false,
       "sweet": false
-      },
+    },
     {
       "id": 20,
       "categorie": "roll",
@@ -288,8 +288,7 @@
       "veggie": true,
       "sweet": false
     },
-    {
-      "id": 44,
+    { "id": 44,
       "categorie": "extras",
       "type": "hot",
       "photo": "https://sushipopimg.s3.amazonaws.com/productos/_VCMHilUTBagZKaQZLrs6557XjQep4_w.jpg",
@@ -299,7 +298,7 @@
       "sells": 20,
       "veggie": false,
       "sweet": false
-      },
+    },
     {
       "id": 46,
       "categorie": "extras",
@@ -335,6 +334,4 @@
       "sells": 80,
       "veggie": true,
       "sweet": true
-    }
-  ]
-}
+    }]}
