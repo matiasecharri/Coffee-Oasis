@@ -288,17 +288,6 @@
       "veggie": true,
       "sweet": false
     },
-    { "id": 44,
-      "categorie": "extras",
-      "type": "hot",
-      "photo": "https://sushipopimg.s3.amazonaws.com/productos/_VCMHilUTBagZKaQZLrs6557XjQep4_w.jpg",
-      "name": "Battered Langoustines",
-      "description": "Panko battered prawns with smoked teriyaki sauce.",
-      "pricex5": 12,
-      "sells": 20,
-      "veggie": false,
-      "sweet": false
-    },
     {
       "id": 46,
       "categorie": "extras",
@@ -334,4 +323,6 @@
       "sells": 80,
       "veggie": true,
       "sweet": true
-    }]}
+    }
+  ]
+}
