@@ -277,18 +277,6 @@
       "sweet": false
     },
     {
-      "id": 46,
-      "categorie": "extras",
-      "type": "cold",
-      "photo": "https://media.discordapp.net/attachments/763661782555426817/1071267915833294848/franui.png?width=717&height=489",
-      "name": "Rapanui",
-      "description": "Delicious chocolate bites filled with strawberries.",
-      "pricex5": 9.5,
-      "sells": 200,
-      "veggie": true,
-      "sweet": true
-    },
-    {
       "id": 47,
       "categorie": "sauces",
       "type": "cold",
