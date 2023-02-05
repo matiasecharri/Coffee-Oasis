@@ -14,15 +14,15 @@
 async function consumiendoApi() {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = `<div class="dot-spinner">
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-  <div class="dot-spinner__dot"></div>
-</div>`;
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+      <div class="dot-spinner__dot"></div>
+    </div>`;
 
   let datosNipponBites = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
