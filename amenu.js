@@ -32,20 +32,20 @@ async function consumirApi() {
 }
 consumirApi();
 
-//----------------------------
-//IMPRESORA GENERAL-----------
+// //----------------------------
+// //IMPRESORA GENERAL-----------
 
 let containercards = document.getElementById("menumain");
 function printer(arreglo) {
   containercards.innerHTML = "";
   arreglo.forEach((x) => {
-    containercards.innerHTML += `<div class="card" data-aos="fade-down" data-aos-duration="1200">
+    containercards.innerHTML += `<div class="card" data-aos="fade-right" data-aos-duration="1200">
        <div class="cardimage">
          <img src="${x.photo}">
        </div>
        <div class="descriptioncontainercard">
        <h3>${x.name}</h3>
-       <p>${x.description}     
+       <p>${x.description}
        </p>
        <div class="pricecard"> Price: ${x.pricex5} USD</div>
        <button> 私を食べなさい</button>
