@@ -10,9 +10,10 @@
 // 4: Inicializar la funcion asincrona.
 
 //CONSUMIENDO API-----------
-async function consumirApi() {
-  let containercards = document.getElementById("menumain");
-  containercards.innerHTML = `<div class="dot-spinner">
+
+async function consumiendoApi() {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = `<div class="dot-spinner">
     <div class="dot-spinner__dot"></div>
     <div class="dot-spinner__dot"></div>
     <div class="dot-spinner__dot"></div>
@@ -22,24 +23,21 @@ async function consumirApi() {
     <div class="dot-spinner__dot"></div>
     <div class="dot-spinner__dot"></div>
   </div>`;
-
-  let nipponApi = await fetch(
+  let datosNipponBites = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
-  nipponApi = await nipponApi.json();
-  console.log(nipponApi);
-  printer(nipponApi);
+  datosNipponBites = await datosNipponBites.json();
+  printer(datosNipponBites);
+  console.log(datosNipponBites);
 }
-consumirApi();
 
-// //----------------------------
-// //IMPRESORA GENERAL-----------
+consumiendoApi();
 
-let containercards = document.getElementById("menumain");
-function printer(arreglo) {
-  containercards.innerHTML = "";
-  arreglo.forEach((x) => {
-    containercards.innerHTML += `<div class="card" data-aos="fade-right" data-aos-duration="1200">
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = "";
+  array.forEach((x) => {
+    containerCards.innerHTML += `<div class="card" data-aos="fade-right" data-aos-duration="1200">
        <div class="cardimage">
          <img src="${x.photo}">
        </div>
@@ -47,10 +45,9 @@ function printer(arreglo) {
        <h3>${x.name}</h3>
        <p>${x.description}
        </p>
-       <div class="pricecard"> Price: ${x.pricex5} USD</div>
+       <div class="pricecard"> Price: ${x.pricex5}</div>
        <button> 私を食べなさい</button>
      </div>
      </div>`;
   });
 }
-
