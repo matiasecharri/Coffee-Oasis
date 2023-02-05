@@ -14,23 +14,23 @@
 async function consumiendoApi() {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = `<div class="dot-spinner">
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-    <div class="dot-spinner__dot"></div>
-  </div>`;
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+</div>`;
+
   let datosNipponBites = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   datosNipponBites = await datosNipponBites.json();
-  printer(datosNipponBites);
   console.log(datosNipponBites);
+  printer(datosNipponBites);
 }
-
 consumiendoApi();
 
 function printer(array) {
@@ -45,7 +45,7 @@ function printer(array) {
        <h3>${x.name}</h3>
        <p>${x.description}
        </p>
-       <div class="pricecard"> Price: ${x.pricex5}</div>
+       <div class="pricecard"> Price: $${x.pricex5}</div>
        <button> 私を食べなさい</button>
      </div>
      </div>`;
