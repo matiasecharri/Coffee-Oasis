@@ -9,7 +9,8 @@
 
 // 4: Inicializar la funcion asincrona.
 
-//CONSUMIENDO API-----------
+//-----------------------------------------------------------//
+//CONSUMIENDO API----------------//
 
 async function consumirApi() {
   let containerCards = document.getElementById("menumain");
@@ -28,12 +29,13 @@ async function consumirApi() {
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   datosNipponBites = await datosNipponBites.json();
-  console.log(datosNipponBites);
-  printer(datosNipponBites)
+  printer(datosNipponBites);
 }
+
 consumirApi();
-//----------------------------------------------------------------------------------------//
-//IMPRESORA-----------------
+
+//---------------------------------------------------------//
+//IMPRESORA-----------------//
 
 function printer(array) {
   let containerCards = document.getElementById("menumain");
@@ -54,4 +56,4 @@ function printer(array) {
   });
 }
 
-//----------------------------------------------------------------------------------------//
+//---------------------------------------------------------//
