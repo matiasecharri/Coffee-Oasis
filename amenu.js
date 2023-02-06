@@ -24,12 +24,15 @@ async function consumirApi() {
   <div class="dot-spinner__dot"></div>
   <div class="dot-spinner__dot"></div>
 `;
-
-  let datosNipponBites = await fetch(
-    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
-  );
-  datosNipponBites = await datosNipponBites.json();
-  printer(datosNipponBites);
+  try {
+    let datosNipponBites = await fetch(
+      "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+    );
+    datosNipponBites = await datosNipponBites.json();
+    printer(datosNipponBites);
+  } catch (error) {
+    console.error(error + console.log("We have an error here!"));
+  }
 }
 
 consumirApi();
