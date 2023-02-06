@@ -9,39 +9,39 @@
 
 // 4: Inicializar la funcion asincrona.
 
-//CONSUMIENDO API-----------
+//-----------------------------------------------------------//
+//CONSUMIENDO API----------------//
 
-async function consumiendoApi() {
+async function consumirApi() {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = ` <div class="dot-spinner">
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+`;
 
-  let containerCards = document.getElementById("menumain")
-  containerCards.innerHTML =
-  `<div class="dot-spinner">
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-      <div class="dot-spinner__dot"></div>
-    </div>`;
-  
   let datosNipponBites = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   datosNipponBites = await datosNipponBites.json();
-  console.log(datosNipponBites);
-  printer(datosNipponBites)
+  printer(datosNipponBites);
 }
-consumiendoApi();
 
+consumirApi();
 
-function printer (array){
-  let containerCards = document.getElementById("menumain")
-  containerCards.innerHTML = ""
-  array.forEach(x=>{
-    containerCards.innerHTML += 
-    `<div class="card" data-aos="fade-right" data-aos-duration="1200">
+//---------------------------------------------------------//
+//IMPRESORA-----------------//
+
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = "";
+  array.forEach((x) => {
+    containerCards.innerHTML += `<div class="card" data-aos="fade-right" data-aos-duration="1200">
     <div class="cardimage">
       <img src="${x.photo}">
     </div>
@@ -53,11 +53,7 @@ function printer (array){
     <button> 私を食べなさい</button>
   </div>
   </div>`;
-
-
-
-
-  })
-
-
+  });
 }
+
+//---------------------------------------------------------//
