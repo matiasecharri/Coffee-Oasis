@@ -24,27 +24,50 @@ async function consumirApi() {
   <div class="dot-spinner__dot"></div>
   <div class="dot-spinner__dot"></div>
 `;
-  try {
-    let datosNipponBites = await fetch(
-      "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
-    );
-    datosNipponBites = await datosNipponBites.json();
-    printer(datosNipponBites);
-  } catch (error) {
-    console.error(error + console.log("We have an error here!"));
+  let datosNipponBitesFetch = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+  let datosNipponBites = await datosNipponBitesFetch.json();
+  console.log(datosNipponBites);
+  printer(datosNipponBites);
+
+  //SEARCHBAR
+  function searchBar() {
+    let textFilter = "";
+    let searchBar = document.getElementById("searchbar1");
+    searchBar.addEventListener("keyup", (x) => {
+      textFilter = x.target.value.toLowerCase();
+      console.log(textFilter);
+      let filteredProducts = datosNipponBites.filter((product) => {
+        return product.name.toLowerCase().includes(textFilter);
+      });
+  
+      if (filteredProducts.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
+        表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredProducts);
+      }
+    });
+  
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
+      }
+    });
   }
+  
+  searchBar();
 }
 
 consumirApi();
 
-//---------------------------------------------------------//
-//IMPRESORA-----------------//
-
+//impresora
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
   array.forEach((x) => {
-    containerCards.innerHTML += `<div class="card" data-aos="fade-right" data-aos-duration="1200">
+    containerCards.innerHTML += `<div class="card">
     <div class="cardimage">
       <img src="${x.photo}">
     </div>
@@ -58,5 +81,3 @@ function printer(array) {
   </div>`;
   });
 }
-
-//---------------------------------------------------------//
