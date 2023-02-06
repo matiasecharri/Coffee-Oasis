@@ -81,3 +81,5 @@ Day11.5: Cards printed.
 Day11.6: Better code.
 
 Day12: Practice the print and promise fetch.
+
+Day13: Searchbar is now filtering but i need to understand better how it works before add button filters.
