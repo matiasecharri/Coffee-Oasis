@@ -1682,7 +1682,11 @@ aside{
   }
   
   .asidecontainer{
-    min-height: 28vh;
+    min-height: 0vh;
+  }
+
+  .menumain{
+    padding-top: 275px;
   }
   aside{
     
