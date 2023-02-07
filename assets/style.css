@@ -410,6 +410,10 @@ h1 span {
   .thedoubletext {
     width: 50%;
   }
+
+  #searchbar1:focus{
+    margin-top:120px;
+  }
   .nav2 {
     position: absolute;
     top: 50px;
