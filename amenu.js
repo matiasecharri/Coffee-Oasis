@@ -31,7 +31,7 @@ async function consumirApi() {
   console.log(datosNipponBites);
   printer(datosNipponBites);
 
-  //SEARCHBAR
+  //SEARCHBAR----------------//
   function searchBar() {
     let textFilter = "";
     let searchBar = document.getElementById("searchbar1");
@@ -41,7 +41,7 @@ async function consumirApi() {
       let filteredProducts = datosNipponBites.filter((product) => {
         return product.name.toLowerCase().includes(textFilter);
       });
-  
+
       if (filteredProducts.length === 0) {
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
         表示するものは何もありません。<p>`;
@@ -49,20 +49,20 @@ async function consumirApi() {
         printer(filteredProducts);
       }
     });
-  
+
     searchBar.addEventListener("input", (x) => {
       if (searchBar.value === "") {
         printer(datosNipponBites);
       }
     });
   }
-  
   searchBar();
+  //FIN SEARCHBAR-------------//
 }
 
 consumirApi();
 
-//impresora
+//IMPRESORA-------------------//
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
@@ -81,3 +81,107 @@ function printer(array) {
   </div>`;
   });
 }
+//FIN IMPRESORA---------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
+
+
+
+
+
+
+
+
+// let isFilterActive = false;
+
+// function onlyRolls() {
+//   if (isFilterActive) {
+//     printer(datosNipponBites);
+//     isFilterActive = false;
+//   } else {
+//     let filteredRolls = datosNipponBites.filter((x) => {
+//       return x.categorie === "roll";
+//     });
+//     printer(filteredRolls);
+//     isFilterActive = true;
+//   }
+// }
+// let buttonRoll = document.getElementById("rolls");
+// buttonRoll.addEventListener("click", onlyRolls);
+
+
+
+
+
+
+
+
+
+
+// function onlyGourmet() {
+//   if (isFilterActive) {
+//     printer(datosNipponBites);
+//     isFilterActive = false;
+//   } else {
+//     let filteredGourmet = datosNipponBites.filter((x) => {
+//       return x.categorie === "gourmet";
+//     });
+//     printer(filteredGourmet);
+//     isFilterActive = true;
+//   }
+// }
+// let buttonGourmet = document.getElementById("gourmet");
+// buttonGourmet.addEventListener("click", onlyGourmet);
+
+
+
+
+
+
+// function onlySalads() {
+//   if (isFilterActive) {
+//     printer(datosNipponBites);
+//     isFilterActive = false;
+//   } else {
+//     let filteredSalads = datosNipponBites.filter((x) => {
+//       return x.categorie === "salad";
+//     });
+//     printer(filteredSalads);
+//     isFilterActive = true;
+//   }
+// }
+
+// let buttonSalads = document.getElementById("salad");
+// buttonSalads.addEventListener("click", onlySalads);
