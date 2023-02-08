@@ -38,12 +38,14 @@ async function consumirApi() {
     searchBar.addEventListener("keyup", (x) => {
       //Vamos a darle un addeven a mi barra para que reaccione al Keyup
       textFilter = x.target.value.toLowerCase(); //Entonces aca mi text filter va a ser igual a lo que escriba el usuario.lowercase
-      let filteredProducts = datosNipponBites.filter((y) => { //Aca voy a declarar una variable que sean los productos filtrados por nombre siempre y cuando incluyan lo de textFilter
+      let filteredProducts = datosNipponBites.filter((y) => {
+        //Aca voy a declarar una variable que sean los productos filtrados por nombre siempre y cuando incluyan lo de textFilter
         return y.name.toLowerCase().includes(textFilter);
       });
-      console.log(filteredProducts)
+      console.log(filteredProducts);
 
-      if (filteredProducts.length === 0) { //Antes de que termine mi add event le digo que si filtered producrs.leght es 0
+      if (filteredProducts.length === 0) {
+        //Antes de que termine mi add event le digo que si filtered producrs.legth es 0
         //entonces imrpimem mi mensaje para ese caso
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
         表示するものは何もありません。<p>`;
@@ -51,7 +53,7 @@ async function consumirApi() {
         printer(filteredProducts); // En cambio si no es 0 me va a imprimir productos filtrados
       }
     }); //termina mi addevent listener
-//Pero antes de que termine la funcion agrego otro add event listener donde le digo que si el valor de searcbar es 0 enttonces que me imprima todo 
+    //Pero antes de que termine la funcion agrego otro add event listener donde le digo que si el valor de searcbar es 0 enttonces que me imprima todo
     searchBar.addEventListener("input", (x) => {
       if (searchBar.value === "") {
         printer(datosNipponBites);
