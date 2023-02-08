@@ -85,3 +85,35 @@ Day12: Practice the print and promise fetch.
 Day13: Searchbar is now filtering but i need to understand better how it works before add button filters.
 
 Day13.5: Practicing searchbar to better understand.
+
+Think the searchbar step by step:
+
+1- I need a variable to store what the user inputs. The variable should be empty so it can be filled/emptied later.
+2- I need to bring the searchbar to my JavaScript because that's where I will move the above variable.
+3- I need my Searchbar to respond to the user's actions, using addEventListener.
+4- I need to fill my empty variable inside my addEventListener with what the user inputs or deletes in the searchbar, using x.target.value.toLowerCase().
+console.log(userInput) here I should be able to see what the user inputs.
+5- I now need to start filtering when the user inputs something.
+let filteredData = data.filter((x) =>{ return x.name.toLowerCase().includes(userInput)
+6- If filteredData.length === 0, meaning if the user inputs something that isn't on the menu, I want a message saying we don't have it.
+7- Otherwise, I want to print filteredData.
+
+x- At this point it should work, but if there is any problem, it would have to be reviewed by testing. In my case, I realized that when clearing what was written using the X, nothing happened and it remained the same. That's because there was a missing addEventListener() on the input.
+searchbar.addEventListener("input", (x) => {
+if (searchbar.value === "") {printer()}
+})
+
+1) Necesito una variable para depositar lo que escriba el usuario, la variable debería estar vacia, para poder llenarla/vaciarla despues.
+2) Necesito traer la searchbar a mi JS porque ahi es donde se va a mover mi variable de arriba.
+3) Necesito que mi Searchbar responda a lo que hace el usuario, addEventListener
+4) Necesito que dentro de mi addEvventListener se llene mi variable vacia con lo que escriba o borre el usuario en la searchbar, x.target.value.toLowerCase()
+console.log(loQueEscrbeElUsuario) aca ya deberia ser capaz de ver lo que escribe.
+5) Necesito que ahora cuando escriba ademas empiece a filtrar, 
+let DatosFiltrados = datos.filter((x) =>{ return x.name.toLowerCase().includes(loqueescribe)
+6) Si dattosFiltrados.length === 0 // Es decir si el usuario escribio algo que no esta en el menu entonces quiero un mesnaje que diga que no tenemos eso
+
+7) caso contrario quiero que me imprima datosFiltrados
+En este punto deberia andar, ahora si surge algun problema habria que revisarlo probando, en mi caso me di cuenta que al borrar con la X lo escrito no pasaba nada, se quedaba igual, eso es porque falttaba un addEventListener() en el input.
+searchbar.addEventListener("input", (x) => {
+if (searchbar.value === "") {printer()}
+}) 
