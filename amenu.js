@@ -10,7 +10,7 @@
 // 4: Inicializar la funcion asincrona.
 
 //-----------------------------------------------------------//
-//CONSUMIENDO API----------------//
+//CONSUMIENDO API----------------// CODE BLOCK 1
 async function consumiendoApi() {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = ` <div class="dot-spinner">
@@ -29,7 +29,7 @@ async function consumiendoApi() {
   let datosNipponBites = await datosNipponBitesFetch.json();
   printer(datosNipponBites);
 
-  //SEARCHBAR----------------//
+  //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchbar() {
     let userTextFilter = "";
     let searchbar = document.getElementById("searchbar1");
@@ -42,7 +42,12 @@ async function consumiendoApi() {
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
       表示するものは何もありません。<p>`;
       } else {
-        printer(datosFiltrados)
+        printer(datosFiltrados);
+      }
+    });
+    searchbar.addEventListener("input", (x) => {
+      if (searchbar.value === "") {
+        printer(datosNipponBites);
       }
     });
   }
@@ -50,7 +55,7 @@ async function consumiendoApi() {
   //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
-//IMPRESORA-------------------//
+//IMPRESORA-------------------// CODE BLOCK 3
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
