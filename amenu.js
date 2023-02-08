@@ -11,8 +11,7 @@
 
 //-----------------------------------------------------------//
 //CONSUMIENDO API----------------//
-
-async function consumirApi() {
+async function consumiendoApi() {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = ` <div class="dot-spinner">
   <div class="dot-spinner__dot"></div>
@@ -28,44 +27,36 @@ async function consumirApi() {
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   let datosNipponBites = await datosNipponBitesFetch.json();
-  console.log(datosNipponBites);
   printer(datosNipponBites);
 
   //SEARCHBAR----------------//
   function mySearchbar() {
-    let userText = "";
+    let userTextFilter = "";
     let searchbar = document.getElementById("searchbar1");
     searchbar.addEventListener("keyup", (x) => {
-      userText = x.target.value.toUpperCase();
-      console.log(userText);
-      let filteredByUser = datosNipponBites.filter((x) => {
-        return x.name.toUpperCase().includes(userText);
+      userTextFilter = x.target.value.toLowerCase();
+      let datosFiltrados = datosNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userTextFilter);
       });
-      if (filteredByUser.length === 0) {
+      if (datosFiltrados.length === 0) {
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
-        表示するものは何もありません。<p>`;
+      表示するものは何もありません。<p>`;
       } else {
-        printer(filteredByUser);
-      }
-    });
-    searchbar.addEventListener("input", (x) => {
-      if (searchbar.value === "") {
-        printer(datosNipponBites);
+        printer(datosFiltrados)
       }
     });
   }
   mySearchbar();
   //FIN SEARCHBAR-------------//
 }
-
-consumirApi();
-
+consumiendoApi();
 //IMPRESORA-------------------//
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
   array.forEach((x) => {
-    containerCards.innerHTML += `<div class="card">
+    containerCards.innerHTML += `
+<div class="card">
     <div class="cardimage">
       <img src="${x.photo}">
     </div>
