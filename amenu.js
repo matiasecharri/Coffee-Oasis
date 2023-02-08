@@ -32,7 +32,29 @@ async function consumirApi() {
   printer(datosNipponBites);
 
   //SEARCHBAR----------------//
-  
+  function mySearchbar() {
+    let userText = "";
+    let searchbar = document.getElementById("searchbar1");
+    searchbar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toUpperCase();
+      console.log(userText);
+      let filteredByUser = datosNipponBites.filter((x) => {
+        return x.name.toUpperCase().includes(userText);
+      });
+      if (filteredByUser.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br>
+        表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredByUser);
+      }
+    });
+    searchbar.addEventListener("input", (x) => {
+      if (searchbar.value === "") {
+        printer(datosNipponBites);
+      }
+    });
+  }
+  mySearchbar();
   //FIN SEARCHBAR-------------//
 }
 
