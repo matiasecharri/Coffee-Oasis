@@ -31,23 +31,29 @@ async function consumiendoApi() {
 
   //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchbar() {
-    let searchBar = document.getElementById("searchbar1");
-    let userText = "";
-    searchBar.addEventListener("keyup", (x) => {
-      userText = x.target.value.toLowerCase();
-      let filterText = datosNipponBites.filter((x) => {
-        return x.name.toLowerCase().includes(userText);
+    //Declaro mi funcion simplemente para mantener organizado el código.
+    let userTextFilter = ""; // Creo una variable vacía donde posteriormente voy a guardar lo que escriba el usuario.
+    let searchbar = document.getElementById("searchbar1"); // Declaro una variable donde voy a traer mi searchbar.
+    searchbar.addEventListener("keyup", (x) => {
+      // Necesito que la searchbar responda a lo que se escribe asi que, addEventListener("keyup").
+      userTextFilter = x.target.value.toLowerCase(); // Le voy a decir que userTextFiltered va a ser igual al valor en tiempo real que tenga X o sea mi searchbar.
+      let datosFiltrados = datosNipponBites.filter((x) => {
+        // Voy a crear una variable donde se van a guardar los datos que filtre el usuario al escribir.
+        return x.name.toLowerCase().includes(userTextFilter); // Le voy a pedir que me retorne x.name(de mi array nippon) pero solo si incluye lo que el user escribió.
       });
-      if (filterText.length === 0) {
+      if (datosFiltrados.length === 0) {
+        //Le voy a decir que si datos filtrados es === 0 me de un mensaje de que eso no existe, porque si el array pasó a tener un .length de 0 es porque no hubo coincidencias entre lo que hay dentro de el y lo que escribio el usuario.
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
-        表示するものは何もありません。<p>`;
+      表示するものは何もありません。<p>`; //Aca le digo que quiero mostrarr en ese caso.
       } else {
-        printer(filterText);
+        printer(datosFiltrados); //En cambio si hay coincidencia quiero que me muestre los datos filtrados.
       }
     });
-    searchBar.addEventListener("input", (x) => {
-      if (searchBar.value === "") {
-        printer(datosNipponBites);
+    searchbar.addEventListener("input", (x) => {
+      //Ademas tuve que agregar un addEventListener extra para que cuando el valor de la searchbar sea de ""
+      if (searchbar.value === "") {
+        //Es decir para cuando el usuario no escribió nada.
+        printer(datosNipponBites); //Esto le indica que si el usuario no escribe nada y searchbar sigue vacio tiene que imprimir todo.
       }
     });
   }
