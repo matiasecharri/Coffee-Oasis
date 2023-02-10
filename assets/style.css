@@ -930,7 +930,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-position: -60px -0px;
+  background-position: -105px -0px;
   background-size: contain;
   filter: grayscale(0%) saturate(150%);
   clip-path: polygon(100% 0, 0 0, 0 100%);
