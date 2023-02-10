@@ -132,3 +132,5 @@ function printer(array) {
 
 // let buttonSalads = document.getElementById("salad");
 // buttonSalads.addEventListener("click", onlySalads);
+
+
