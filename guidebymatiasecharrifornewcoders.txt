@@ -117,3 +117,5 @@ En este punto deberia andar, ahora si surge algun problema habria que revisarlo 
 searchbar.addEventListener("input", (x) => {
 if (searchbar.value === "") {printer()}
 }) 
+
+Day13.5) First commit on notebook.
