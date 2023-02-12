@@ -33,7 +33,7 @@ async function consumedApi() {
   function mySearchBar() {
     let searchBar = document.getElementById("searchbar");
     let userText = "";
-    searchBar.addEventListener("keyup", (x) => {});
+    searchBar.addEventListener("keyup", (x) => {asd});
   }
   mySearchBar();
   //FIN SEARCHBAR-------------//
