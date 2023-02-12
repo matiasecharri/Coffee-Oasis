@@ -30,7 +30,10 @@ async function consumedApi() {
   printer(nipponBitesInfo);
 
   //SEARCHBAR----------------// CODE BLOCK 2
-  
+  function mySearchBar(){
+
+  }
+  mySearchBar()
   //FIN SEARCHBAR-------------//
 }
 consumedApi();
