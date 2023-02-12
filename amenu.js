@@ -32,6 +32,7 @@ async function consumedApi() {
   //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchBar(){
     let searchBar = document.getElementById("searchbar")
+    let userText = ""
 
   }
   mySearchBar()
