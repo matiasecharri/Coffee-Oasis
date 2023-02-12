@@ -10,6 +10,7 @@
 // 4: Inicializar la funcion asincrona.
 
 //-----------------------------------------------------------//
+//CONSUMIENDO API----------------// CODE BLOCK 1
 async function consumedApi() {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = ` <div class="dot-spinner">
@@ -27,9 +28,12 @@ async function consumedApi() {
   );
   let nipponBitesInfo = await nipponBitesFetch.json();
   printer(nipponBitesInfo);
+
+  //SEARCHBAR----------------// CODE BLOCK 2
+  //FIN SEARCHBAR-------------//
 }
 consumedApi();
-
+  //IMPRESORA-------------------// CODE BLOCK 3
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
@@ -47,6 +51,7 @@ function printer(array) {
       </div>`;
   });
 }
+  //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
