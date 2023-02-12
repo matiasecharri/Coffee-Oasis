@@ -119,3 +119,5 @@ if (searchbar.value === "") {printer()}
 }) 
 
 Day13.5) First commit on notebook.
+
+Day13.6) I learn about Wordpress, no changes on this proyect.
