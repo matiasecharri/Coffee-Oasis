@@ -31,9 +31,20 @@ async function consumedApi() {
 
   //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchBar() {
-    let searchBar = document.getElementById("searchbar");
+    let searchBar = document.getElementById("searchbar1");
     let userText = "";
-    searchBar.addEventListener("keyup", (x) => {});
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      filteredText = nipponBitesInfo.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      if (filteredText.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredText);
+      }
+    });
   }
   mySearchBar();
   //FIN SEARCHBAR-------------//
