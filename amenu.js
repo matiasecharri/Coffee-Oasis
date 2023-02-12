@@ -30,16 +30,16 @@ async function consumedApi() {
   printer(nipponBitesInfo);
 
   //SEARCHBAR----------------// CODE BLOCK 2
-  function mySearchBar(){
-    let searchBar = document.getElementById("searchbar")
-    let userText = ""
-
+  function mySearchBar() {
+    let searchBar = document.getElementById("searchbar");
+    let userText = "";
+    searchBar.addEventListener("keyup", (x) => {});
   }
-  mySearchBar()
+  mySearchBar();
   //FIN SEARCHBAR-------------//
 }
 consumedApi();
-  //IMPRESORA-------------------// CODE BLOCK 3
+//IMPRESORA-------------------// CODE BLOCK 3
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
@@ -57,7 +57,7 @@ function printer(array) {
       </div>`;
   });
 }
-  //FIN IMPRESORA---------------//
+//FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
