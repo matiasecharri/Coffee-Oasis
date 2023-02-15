@@ -30,7 +30,28 @@ async function consumiendoApi() {
   printer(datosNipponBites);
 
   //SEARCHBAR----------------// CODE BLOCK 2
- 
+  function mySearchbar() {
+    let userText = "";
+    let searchBar = document.getElementById("searchbar1");
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      filteredInfo = datosNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      if (filteredInfo.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+        表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredInfo);
+      }
+    });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
+      }
+    });
+  }
+  mySearchbar();
   //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
