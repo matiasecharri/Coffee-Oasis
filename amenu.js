@@ -32,7 +32,24 @@ async function consumiendoApi() {
   //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchBar() {
     let userWrites = "";
-    let 
+    let searchBar = document.getElementById("searchbar1");
+    searchBar.addEventListener("keyup", (x) => {
+      userWrites = x.target.value.toUpperCase();
+      filterCards = datosNipponBites.filter((x) => {
+        return x.name.toUpperCase().includes(userWrites);
+      });
+      if (filterCards.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>`;
+      } else {
+        printer(filterCards);
+      }
+    });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
+      }
+    });
   }
   mySearchBar();
 
