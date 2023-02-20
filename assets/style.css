@@ -1885,24 +1885,3 @@ input {
 }
 
 
-.write{
-  background: rgb(36,167,231);
-  background: linear-gradient(212deg, rgba(36,167,231,1) 0%, rgba(122,195,242,1) 31%, rgba(122,195,242,1) 64%, rgba(36,167,231,1) 100%);
-    height:20px;
-    width: 136px;
-    font-weight: 900;
-    margin-left: -20px;
-    margin-right: -20px;
-   text-align: center;
-   justify-content: center;
-   display: flex;
-    font-size:12px;
-   padding-top: 7px;
-   padding-bottom: 25px;
-   padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 5px; 
-  }
-  .write{
-    background-image: url(https://media.discordapp.net/attachments/763661782555426817/1077319687794335854/Blownaway_BookNow_Button.png);
-  }
