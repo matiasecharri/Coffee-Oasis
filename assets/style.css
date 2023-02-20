@@ -1875,3 +1875,26 @@ padding-top: 40px;
   border-top: 2px solid red;
   
 }
+
+
+@media only screen and (max-width: 1440px) {
+  h1{
+    color: rgb(218, 245, 13);
+  }
+  #image-track > .image2 {
+    width: 35vmin;
+    height: 58vmin;
+    object-fit: cover;
+    /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46% ; */
+  
+    background: url(./images/sushi/sushi1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-position: -105px -0px;
+    background-size: contain;
+    filter: grayscale(0%) saturate(150%);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+  }
+  
+}
