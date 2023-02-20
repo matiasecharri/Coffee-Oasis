@@ -945,7 +945,7 @@ body {
   background-size: contain;
   background-attachment: fixed;
   background-position: center;
-  background-position: -100px -900px;
+  background-position: -270px -900px;
   filter: grayscale(0%) saturate(150%);
   clip-path: polygon(100% 100%, 100% 0, 0 100%);
 }
