@@ -62,7 +62,7 @@ async function consumiendoApi() {
   //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
-//IMPRESORA-------------------// CODE BLOCK 3
+//IMPRESORA-------------------// CODE ssBLOCK 3
 function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
