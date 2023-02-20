@@ -1817,9 +1817,7 @@ input {
 }
 
 @media only screen and (max-width: 1440px) {
-  h1 {
-    color: rgb(218, 245, 13);
-  }
+ 
   #image-track > .image2 {
     width: 35vmin;
     height: 58vmin;
@@ -1830,8 +1828,8 @@ input {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-position: -105px -0px;
-    background-size: contain;
+    background-position: -105px -680px;
+    background-size: cover;
     filter: grayscale(0%) saturate(150%);
     clip-path: polygon(100% 0, 0 0, 0 100%);
   }
@@ -1869,5 +1867,20 @@ input {
     
     filter: grayscale(90%);
     clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+
+  #image-track > .image4 {
+    width: 35vmin;
+    height: 58vmin;
+    object-fit: cover;
+    /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
+  
+    background: url(./images/sushi/sushi6.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-position: 380px -350px;
+    filter: grayscale(90%);
+    background-size: cover;
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
   }
 }
