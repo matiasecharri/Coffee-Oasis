@@ -945,7 +945,7 @@ body {
   background-size: contain;
   background-attachment: fixed;
   background-position: center;
-  background-position: -100px -900px;
+  background-position: -270px -900px;
   filter: grayscale(0%) saturate(150%);
   clip-path: polygon(100% 100%, 100% 0, 0 100%);
 }
@@ -1816,8 +1816,7 @@ input {
   border-top: 2px solid red;
 }
 
-@media only screen and (max-width: 1440px) {
- 
+@media only screen and (max-width: 1650px) {
   #image-track > .image2 {
     width: 35vmin;
     height: 58vmin;
@@ -1855,16 +1854,16 @@ input {
   #image-track > .image {
     width: 35vmin;
     height: 58vmin;
-  
+
     /* border-radius:100% 0% 100% 0% / 74% 62% 38% 26% ; */
-  
+
     background: url(./images/sushi/sushi2.jpg);
     background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 
     background-position: center;
-    
+
     filter: grayscale(90%);
     clip-path: polygon(100% 0, 0 0, 100% 100%);
   }
@@ -1874,7 +1873,7 @@ input {
     height: 58vmin;
     object-fit: cover;
     /* border-radius:0% 100% 0% 100% / 54% 75% 25% 46%; */
-  
+
     background: url(./images/sushi/sushi6.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -1884,3 +1883,5 @@ input {
     clip-path: polygon(100% 100%, 0 0, 0 100%);
   }
 }
+
+
