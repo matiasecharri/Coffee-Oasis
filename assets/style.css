@@ -84,9 +84,7 @@ nav {
 .active:hover {
   border: 0px solid white;
 }
-header{
-  border-radius: 10px 0px 10px 10px;
-}
+
 header {
   background-color: rgb(197, 21, 44);
 
