@@ -41,6 +41,4 @@ const observer2 = new IntersectionObserver(function (entries) {
 observer2.observe(animatedElement2);
 
 
-<iframe src="https://link.omnipoint360.com/widget/form/SzVI98fkbRmWpwaLVWj1" 
-style="border:none;width:100%;min-height:445px;" scrolling="no" id="4uZp8LLkOM06nZKw44YR"></iframe>
-<script src="https://link.omnipoint360.com/js/form_embed.js"></script>
+
