@@ -39,3 +39,6 @@ const observer2 = new IntersectionObserver(function (entries) {
 });
 // Comienza a observar el elemento
 observer2.observe(animatedElement2);
+
+
+
