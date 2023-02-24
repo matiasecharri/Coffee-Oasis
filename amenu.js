@@ -35,7 +35,13 @@ async function consumiendoApi() {
     let searchBar = document.getElementById("searchbar1")
    searchBar.addEventListener("keyup", (x=>{
     userText = x.target.value.toLowerCase()
-    console.log(userText)
+    let filteredData = datosNipponBites.filter((x=>{
+      return x.name.toLowerCase().includes(userText)
+    }))
+    if(filteredData.length === 0){
+      `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>`
+    } else {printer(filteredData)}
    }))
   
   }
