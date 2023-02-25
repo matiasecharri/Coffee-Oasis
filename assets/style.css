@@ -1884,4 +1884,11 @@ input {
   }
 }
 
+@media only screen and (min-width: 1680px) {
+  .sakuraflower {
+    position: absolute;
 
+    top: 40px;
+    left: 820px;
+  }
+}
