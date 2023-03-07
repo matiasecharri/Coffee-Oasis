@@ -35,6 +35,13 @@ async function consumiendoApi() {
     let searchBar = document.getElementById("searchbar1");
     searchBar.addEventListener("keyup", (x) => {
       userText = x.target.value.toLowerCase();
+      let filteredThings = datosNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      if (filteredThings.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+        表示するものは何もありません。<p>`;
+      }
     });
   }
   mySearchBar();
