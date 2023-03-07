@@ -30,7 +30,14 @@ async function consumiendoApi() {
   printer(datosNipponBites);
 
   //SEARCHBAR----------------// CODE BLOCK 2
-  
+  function mySearchBar() {
+    let userText = "";
+    let searchBar = document.getElementById("searchbar1");
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+    });
+  }
+  mySearchBar();
   //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
