@@ -48,7 +48,9 @@ async function consumiendoApi() {
       表示するものは何もありません。<p>`; //Aca le digo que quiero mostrarr en ese caso.
       } else {
         printer(datosFiltrados); //En cambio si hay coincidencia quiero que me muestre los datos filtrados.
-      }
+      }`<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>``<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>`
     });
     searchbar.addEventListener("input", (x) => {
       //Ademas tuve que agregar un addEventListener extra para que cuando el valor de la searchbar sea de ""
