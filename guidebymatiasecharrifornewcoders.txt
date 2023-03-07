@@ -133,3 +133,6 @@ Tengo que terminar de descargar las cosas importantes en la PC de escritorio me 
 
 Day 14.7) Podriamos hacerle un map a las categorias y despues con if y else if comparar y colocarlas con sus respectivas fotos.
 
+
+Day 14.8) Otro dia de Wordpress
+
