@@ -42,7 +42,12 @@ async function consumiendoApi() {
         containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
         表示するものは何もありません。<p>`;
       } else {
-        printer(filteredThings)
+        printer(filteredThings);
+      }
+    });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
       }
     });
   }
