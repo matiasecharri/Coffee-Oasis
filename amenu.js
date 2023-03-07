@@ -63,10 +63,10 @@ async function consumiendoApi() {
 }
 consumiendoApi();
 //IMPRESORA-------------------// CODE ssBLOCK 3
-function printer(loqueimprimo) {
+function printer(array) {
   let containerCards = document.getElementById("menumain");
   containerCards.innerHTML = "";
-  loqueimprimo.forEach((x) => {
+  array.forEach((x) => {
     containerCards.innerHTML += `
 <div class="card">
     <div class="cardimage">
@@ -82,7 +82,6 @@ function printer(loqueimprimo) {
   </div>`;
   });
 }
-printer();
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
