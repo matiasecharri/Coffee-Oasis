@@ -30,7 +30,7 @@ const animatedElement2 = document.querySelector(".animado2");
 
 // Crea el observer
 const observer2 = new IntersectionObserver(function (entries) {
-  // Comprueba si el elemento es visible
+  // Comprueba si el elemento es visiblex
   if (entries[0].isIntersecting) {
     setTimeout(() => {
       animatedElement2.classList.add("h5koi");
