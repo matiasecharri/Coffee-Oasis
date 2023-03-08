@@ -131,5 +131,8 @@ at least for short period of time.
 
 Tengo que terminar de descargar las cosas importantes en la PC de escritorio me falta Python, Node, Postman, etc.
 
-Day 14.6) Nippon Bites continues in a similar state, i have to end it, but i need more knowledge first, 
-and more free time. I expend my Sunday resting an English test to get a ceritificate.
+Day 14.7) Podriamos hacerle un map a las categorias y despues con if y else if comparar y colocarlas con sus respectivas fotos.
+
+
+Day 14.8) Otro dia de Wordpress
+
