@@ -13,15 +13,47 @@
 //CONSUMIENDO API----------------// CODE BLOCK 1
 
 async function consumirApi() {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = ` <div class="dot-spinner">
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+`;
+
   let apiFetch = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   let apiNipponBites = await apiFetch.json();
+  printer(apiNipponBites);
 }
 consumirApi();
 
-
 //INICIO IMPRESORA------------//
+
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = ""
+  array.forEach((x) => {
+    containerCards.innerHTML += `
+<div class="card">
+    <div class="cardimage">
+      <img src="${x.photo}">
+    </div>
+    <div class="descriptioncontainercard">
+    <h3>${x.name}</h3>
+    <p>${x.description}
+    </p>
+    <div class="pricecard"> Price: $${x.pricex5}</div>
+    <button> 私を食べなさい</button>
+  </div>
+  </div>`;
+  });
+}
 
 //FIN IMPRESORA---------------//
 
