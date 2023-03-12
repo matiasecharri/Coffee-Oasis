@@ -33,7 +33,17 @@ async function consumirApi() {
 
   //INICIO SEARCHBAR------------//
   function mySearchBar() {
-    
+    let searchBar = document.getElementById("searchbar1");
+    let userText = "";
+
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      let datosNipponBitesFiltrados = apiNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      if (datosNipponBitesFiltrados.length === 0) {
+      }
+    });
   }
   mySearchBar();
 
