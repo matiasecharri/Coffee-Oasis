@@ -42,6 +42,15 @@ async function consumirApi() {
         return x.name.toLowerCase().includes(userText);
       });
       if (datosNipponBitesFiltrados.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+            表示するものは何もありません。<p>`;
+      } else {
+        printer(datosNipponBitesFiltrados);
+      }
+    });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(apiNipponBites);
       }
     });
   }
