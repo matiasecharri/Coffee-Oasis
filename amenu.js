@@ -30,6 +30,14 @@ async function consumirApi() {
   );
   let apiNipponBites = await apiFetch.json();
   printer(apiNipponBites);
+
+  //INICIO SEARCHBAR------------//
+  function mySearchBar() {
+    
+  }
+  mySearchBar();
+
+  //FIN SEARCHBAR---------------//
 }
 consumirApi();
 
@@ -37,7 +45,7 @@ consumirApi();
 
 function printer(array) {
   let containerCards = document.getElementById("menumain");
-  containerCards.innerHTML = ""
+  containerCards.innerHTML = "";
   array.forEach((x) => {
     containerCards.innerHTML += `
 <div class="card">
