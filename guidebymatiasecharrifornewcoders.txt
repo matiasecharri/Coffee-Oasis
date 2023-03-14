@@ -136,3 +136,4 @@ Day 14.7) Podriamos hacerle un map a las categorias y despues con if y else if c
 
 Day 14.8) Otro dia de Wordpress
 
+Day 14.9) Working day my friend
