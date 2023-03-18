@@ -82,7 +82,7 @@ function printer(array) {
   </div>`;
   });
 }
-//Helping delgado
+//
 
 //Day 14.9) Working day my friend
 
