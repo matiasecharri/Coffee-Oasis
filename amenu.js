@@ -86,7 +86,6 @@ function printer(array) {
 
 //Day 14.9) Working day my friend
 
-//Helping 
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
