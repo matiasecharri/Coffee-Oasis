@@ -82,13 +82,10 @@ function printer(array) {
   </div>`;
   });
 }
-//
 
 //Day 14.9) Working day my friend
 
 //FIN IMPRESORA---------------//
-
-//LETS GO FOR SEARCHBAR 
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
