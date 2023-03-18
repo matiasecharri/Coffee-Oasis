@@ -88,6 +88,7 @@ function printer(array) {
 
 //FIN IMPRESORA---------------//
 
+//LETS GO FOR SEARCHBAR 
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
