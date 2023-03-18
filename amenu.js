@@ -86,6 +86,8 @@ function printer(array) {
 
 //Day 14.9) Working day my friend
 
+//Day 14.9) Helping Delgadillo
+
 //FIN IMPRESORA---------------//
 
 
