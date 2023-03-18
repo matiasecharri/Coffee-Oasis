@@ -82,6 +82,7 @@ function printer(array) {
   </div>`;
   });
 }
+//Helping day with delgadillo
 
 //Day 14.9) Working day my friend
 
