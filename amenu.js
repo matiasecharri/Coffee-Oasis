@@ -88,6 +88,7 @@ function printer(array) {
 
 //FIN IMPRESORA---------------//
 
+
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
 // let isFilterActive = false;
