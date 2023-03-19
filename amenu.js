@@ -41,7 +41,6 @@ async function consumiendoApi() {
         // Voy a crear una variable donde se van a guardar los datos que filtre el usuario al escribir.
         return x.name.toLowerCase().includes(userTextFilter); // Le voy a pedir que me retorne x.name(de mi array nippon) pero solo si incluye lo que el user escribió.
       });
-
       console.log(userTextFilter);
       if (datosFiltrados.length === 0) {
         //Le voy a decir que si datos filtrados es === 0 me de un mensaje de que eso no existe, porque si el array pasó a tener un .length de 0 es porque no hubo coincidencias entre lo que hay dentro de el y lo que escribio el usuario.
