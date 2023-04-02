@@ -39,7 +39,9 @@ async function consumiendoApi() {
       let filteredInfo = datosNipponBites.filter((x) => {
         return x.name.toLowerCase().includes(userText);
       });
-      console.log(filteredInfo);
+      if (filteredInfo.length === 0) {
+       
+      }
     });
   }
   mySearchbar();
