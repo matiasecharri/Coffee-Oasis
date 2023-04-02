@@ -40,7 +40,10 @@ async function consumiendoApi() {
         return x.name.toLowerCase().includes(userText);
       });
       if (filteredInfo.length === 0) {
-       
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+              表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredInfo);
       }
     });
   }
