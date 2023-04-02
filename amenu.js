@@ -13,11 +13,23 @@
 //CONSUMIENDO API----------------// CODE BLOCK 1
 
 async function consumiendoApi() {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = ` <div class="dot-spinner">
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+`;
   let consumirApi = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   let datosNipponBites = await consumirApi.json();
   console.log(datosNipponBites);
+  printer(datosNipponBites);
 }
 consumiendoApi();
 //SEARCHBAR----------------// CODE BLOCK 2
@@ -27,6 +39,25 @@ consumiendoApi();
 //Day 14.9) Working day my friend
 
 //FIN IMPRESORA---------------//
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = "";
+  array.forEach((x) => {
+    containerCards.innerHTML += `
+    <div class="card">
+        <div class="cardimage">
+          <img src="${x.photo}">
+        </div>
+        <div class="descriptioncontainercard">
+        <h3>${x.name}</h3>
+        <p>${x.description}
+        </p>
+        <div class="pricecard"> Price: $${x.pricex5}</div>
+        <button> 私を食べなさい</button>
+      </div>
+      </div>`;
+  });
+}
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
 
