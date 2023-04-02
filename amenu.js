@@ -29,15 +29,23 @@ async function consumiendoApi() {
   );
   let datosNipponBites = await consumirApi.json();
   printer(datosNipponBites);
+
+  //SEARCHBAR----------------// CODE BLOCK 2
+  function mySearchbar() {
+    let searchBar = document.getElementById("searchbar1");
+    let userText = "";
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      let filteredInfo = datosNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      console.log(filteredInfo);
+    });
+  }
+  mySearchbar();
+  //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
-//SEARCHBAR----------------// CODE BLOCK 2
-function mySearchbar() {
-  
-}
-mySearchbar();
-//FIN SEARCHBAR-------------//
-
 //Day 14.9) Working day my friend
 
 //FIN IMPRESORA---------------//
