@@ -32,7 +32,10 @@ async function consumiendoApi() {
 }
 consumiendoApi();
 //SEARCHBAR----------------// CODE BLOCK 2
-
+function mySearchbar() {
+  
+}
+mySearchbar();
 //FIN SEARCHBAR-------------//
 
 //Day 14.9) Working day my friend
