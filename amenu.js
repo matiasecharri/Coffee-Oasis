@@ -28,7 +28,6 @@ async function consumiendoApi() {
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   let datosNipponBites = await consumirApi.json();
-  console.log(datosNipponBites);
   printer(datosNipponBites);
 }
 consumiendoApi();
