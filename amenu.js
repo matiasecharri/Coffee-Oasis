@@ -46,6 +46,11 @@ async function consumiendoApi() {
         printer(filteredInfo);
       }
     });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
+      }
+    });
   }
   mySearchbar();
   //FIN SEARCHBAR-------------//
