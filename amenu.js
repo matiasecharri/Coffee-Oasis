@@ -8,7 +8,7 @@
 // 3: Igualar nuestra variable que contiene todo lo de la API a await ____.json() para transformarlo a formato json y poder utilizarla, se hace para convertir la respuesta del servidor que se recibe en formato JSON (JavaScript Object Notation), lo cual lo convierte en un objeto de JavaScript manipulable. Si no se hiciera dataApi.json(), se recibiría la respuesta en formato binario y no podrías acceder a su contenido de manera sencilla..
 
 // 4: Inicializar la funcion asincrona.
-
+//Another Wordpress day
 //-----------------------------------------------------------//
 //CONSUMIENDO API----------------// CODE BLOCK 1
 async function consumiendoApi() {
