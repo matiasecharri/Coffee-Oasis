@@ -1938,7 +1938,7 @@ input {
   height: 15vh;
 
   object-fit: cover;
-  filter: brightness(70%) grayscale(100%) opacity(100%);
+  filter: brightness(70%) grayscale(100%) opacity(90%);
 
   z-index: 2;
 }
