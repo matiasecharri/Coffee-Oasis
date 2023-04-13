@@ -83,6 +83,8 @@ function printer(array) {
   });
 }
 
+//Hello if you reading this!, today was a really heavy day working in Wordpress, i cant make commits in Wordpress so, there we go!
+
 //Day 14.9) Working day my friend
 
 //FIN IMPRESORA---------------//
