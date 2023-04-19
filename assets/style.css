@@ -615,6 +615,8 @@ main {
   font-size: 45px;
   font-weight: 800;
   margin-top: 80px;
+  text-align: center;
+  
 }
 
 @media only screen and (max-width: 1460px) {
@@ -1963,4 +1965,11 @@ input {
   70% {
     margin-left: -200%;
   }
+}
+
+.hiddentitle{
+  font-size: 0px;
+  color: #287df400;
+  position: absolute;
+  z-index: -10;
 }
