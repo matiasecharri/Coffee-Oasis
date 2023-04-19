@@ -1966,3 +1966,10 @@ input {
     margin-left: -200%;
   }
 }
+
+.hiddentitle{
+  font-size: 0px;
+  color: #287df400;
+  position: absolute;
+  z-index: -10;
+}
