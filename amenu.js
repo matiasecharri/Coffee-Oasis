@@ -83,9 +83,6 @@ function printer(array) {
   });
 }
 
-//Fixing
-//Fixing
-//Fixing
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
