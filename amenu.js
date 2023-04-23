@@ -85,6 +85,9 @@ function printer(array) {
 //Fixing
 //Fixing
 //Fixing
+//Fixing
+//Fixing
+//Fixing
 
 //FIN IMPRESORA---------------//
 
