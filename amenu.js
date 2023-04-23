@@ -82,7 +82,7 @@ function printer(array) {
   </div>`;
   });
 }
-//finish
+
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
