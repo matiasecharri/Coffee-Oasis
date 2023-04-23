@@ -82,7 +82,9 @@ function printer(array) {
   </div>`;
   });
 }
-
+//Fixing
+//Fixing
+//Fixing
 
 //FIN IMPRESORA---------------//
 
