@@ -10,16 +10,52 @@
 // 4: Inicializar la funcion asincrona.
 //Another Wordpress day
 //-----------------------------------------------------------//
-//CONSUMIENDO API----------------// CODE BLOCK 1
+//CONSUMIENDO API----------------// CODE BLOCK
+async function consumiendoApi() {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = ` <div class="dot-spinner">
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+ <div class="dot-spinner__dot"></div>
+`;
 
+  let datosNipponBitesJasont = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+  let datosNipponBites = await datosNipponBitesJasont.json();
+  printer(datosNipponBites);
+}
+consumiendoApi();
 
-  //SEARCHBAR----------------// CODE BLOCK 2
+//SEARCHBAR----------------// CODE BLOCK 2
 
-  //FIN SEARCHBAR-------------//
-
+//FIN SEARCHBAR-------------//
 
 //IMPRESORA-------------------// CODE ssBLOCK 3
-
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = "";
+  array.forEach((x) => {
+    containerCards.innerHTML += `
+<div class="card">
+    <div class="cardimage">
+      <img src="${x.photo}">
+    </div>
+    <div class="descriptioncontainercard">
+    <h3>${x.name}</h3>
+    <p>${x.description}
+    </p>
+    <div class="pricecard"> Price: $${x.pricex5}</div>
+    <button> 私を食べなさい</button>
+  </div>
+  </div>`;
+  });
+}
 
 //FIN IMPRESORA---------------//
 
