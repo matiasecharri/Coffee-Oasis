@@ -29,18 +29,33 @@ async function consumiendoApi() {
   );
   let datosNipponBites = await datosNipponBitesJasont.json();
   printer(datosNipponBites);
+
   //SEARCHBAR----------------// CODE BLOCK 2
   function mySearchBar() {
     let searchBar = document.getElementById("searchbar1");
     let userText = "";
     searchBar.addEventListener("keyup", (x) => {
       userText = x.target.value.toLowerCase();
-      datosFiltrados
+      let filteredData = datosNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      if (filteredData.length === 0) {
+        containerCards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+      表示するものは何もありません。<p>`;
+      } else {
+        printer(filteredData);
+      }
+    });
+    searchBar.addEventListener("input", (x) => {
+      if (searchBar.value === "") {
+        printer(datosNipponBites);
+      }
     });
   }
   mySearchBar();
   //FIN SEARCHBAR-------------//
 }
+
 consumiendoApi();
 
 //IMPRESORA-------------------// CODE ssBLOCK 3
