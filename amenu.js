@@ -29,12 +29,19 @@ async function consumiendoApi() {
   );
   let datosNipponBites = await datosNipponBitesJasont.json();
   printer(datosNipponBites);
+  //SEARCHBAR----------------// CODE BLOCK 2
+  function mySearchBar() {
+    let searchBar = document.getElementById("searchbar1");
+    let userText = "";
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      datosFiltrados
+    });
+  }
+  mySearchBar();
+  //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
-
-//SEARCHBAR----------------// CODE BLOCK 2
-
-//FIN SEARCHBAR-------------//
 
 //IMPRESORA-------------------// CODE ssBLOCK 3
 function printer(array) {
