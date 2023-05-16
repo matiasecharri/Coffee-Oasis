@@ -82,7 +82,7 @@ function printer(array) {
   </div>`;
   });
 }
-
+//FIXED GA4 CONVERSIONS!
 //-2000
 //FIN IMPRESORA---------------//
 
