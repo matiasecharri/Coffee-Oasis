@@ -1973,3 +1973,30 @@ input {
   position: absolute;
   z-index: -10;
 }
+
+
+.icon-drain img {
+  content: url(/wp-content/uploads/2023/05/DrainSVG.svg);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.icon-drain:hover img {
+  content: url(/wp-content/uploads/2023/05/DrainSVGHover.svg);
+}
+
+
+
+.hero-svc-icon-ac img {
+  content: url(//srv/htdocs/wp-content/uploads/2023/05/Air-Conditioning.png);
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.hero-svc-icon-ac:hover img {
+  content: url(//srv/htdocs/wp-content/uploads/2023/05/AC.png);
+}
