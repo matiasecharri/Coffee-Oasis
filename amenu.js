@@ -84,6 +84,7 @@ function printer(array) {
 }
 //FIXED GA4 CONVERSIONS!
 //-2000
+//FIxy
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
