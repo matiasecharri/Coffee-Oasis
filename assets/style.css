@@ -1977,39 +1977,3 @@ input {
 
 
 
-
-/* shrinking logo image */
-
-.shrinking-logo img {
-width: 150px!important;
-padding: 12px;
-transition: all .2s linear!important;
--webkit-transition: all .2s linear!important;
--moz-transition: all .2s linear!important;
-}
-
-.shrinker.elementor-sticky--effects img {
-width: 100px!important;
-transition: all .2s linear!important;
--webkit-transition: all .2s linear!important;
--moz-transition: all .2s linear!important;
-}
-
-
-/* shrinking button */
-
-.shrinker.elementor-sticky--effects .elementor-button {
-padding: 10px 0px!important;
-transition: all .2s linear!important;
--webkit-transition: all .2s linear!important;
--moz-transition: all .2s linear!important;
-}
-
-/* shrinking menu */
-
-.shrinker.elementor-sticky--effects ul li a {
-font-size: 0.8rem!important;
-transition: all .2s linear!important;
--webkit-transition: all .2s linear!important;
--moz-transition: all .2s linear!important;
-}
