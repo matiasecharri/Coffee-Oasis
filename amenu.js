@@ -41,7 +41,11 @@ async function dataApiConsumer() {
       let filteredData = dataNipponBites.filter((x) => {
         return x.name.toLowerCase().includes(userText);
       });
-      console.log(filteredData);
+      if (filteredData.length === 0) {
+        container4Cards.innerHTML = `HOLA`;
+      } else {
+        printer(filteredData);
+      }
     });
   }
   mySearchBar();
