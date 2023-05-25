@@ -11,13 +11,27 @@
 //Another Wordpress day
 //-----------------------------------------------------------//
 
+//CODE BLOCK 1: ASYNC FUNCTION//
 async function dataApiConsumer() {
-  let dataNipponBites = await fetch(
-    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products");
-    console.log(dataNipponBites)
+  let container4Cards = document.getElementById("menumain")
+  let dataNipponBitesResponse = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+  let dataNipponBites = await dataNipponBitesResponse.json();
+  printer()
 }
 dataApiConsumer();
+//CODE BLOCK 1 END//
 
+//CODE BLOCK 2 PRINTER//
+function printer(array){
+
+}
+
+//CODE BLOCK 2 END//
+
+
+//01:06, get array
 //01:04, get response
 //01:01, 2nd commit of the day.
 //FIXED GA4 CONVERSIONS!
