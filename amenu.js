@@ -11,6 +11,14 @@
 //Another Wordpress day
 //-----------------------------------------------------------//
 
+
+async function dataApiConsumer(){
+console.log("#1")
+}
+dataApiConsumer()
+
+
+
 //01:01, 2nd commit of the day.
 //FIXED GA4 CONVERSIONS!
 //-2000
