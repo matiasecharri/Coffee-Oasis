@@ -11,14 +11,14 @@
 //Another Wordpress day
 //-----------------------------------------------------------//
 
-
-async function dataApiConsumer(){
-console.log("#1")
+async function dataApiConsumer() {
+  let dataNipponBites = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products");
+    console.log(dataNipponBites)
 }
-dataApiConsumer()
+dataApiConsumer();
 
-
-
+//01:04, get response
 //01:01, 2nd commit of the day.
 //FIXED GA4 CONVERSIONS!
 //-2000
