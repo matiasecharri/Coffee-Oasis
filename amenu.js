@@ -87,6 +87,7 @@ function printer(array) {
 //FIxy
 //Saturday --
 //Tuesday Bamboo Plumbing
+//RIP M1
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
