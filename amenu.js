@@ -84,6 +84,7 @@ function printer(array) {
 }
 
 //PRINTER END//
+//01:35, all working and finished
 //01:29, searchbar function
 //01:12, printer finished
 //01:06, get array
