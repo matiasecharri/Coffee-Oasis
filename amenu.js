@@ -84,6 +84,7 @@ function printer(array) {
 }
 
 //PRINTER END//
+//01:36, sorry is the rollback again, see you newcode
 //01:35, all working and finished
 //01:29, searchbar function
 //01:12, printer finished
