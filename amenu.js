@@ -13,24 +13,50 @@
 
 //CODE BLOCK 1: ASYNC FUNCTION//
 async function dataApiConsumer() {
-  let container4Cards = document.getElementById("menumain")
+  let container4Cards = document.getElementById("menumain");
+  container4Cards.innerHTML = `<div class="dot-spinner">
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+`;
   let dataNipponBitesResponse = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
   let dataNipponBites = await dataNipponBitesResponse.json();
-  printer()
+  printer(dataNipponBites);
 }
 dataApiConsumer();
 //CODE BLOCK 1 END//
 
 //CODE BLOCK 2 PRINTER//
-function printer(array){
-
+function printer(array) {
+  let container4Cards = document.getElementById("menumain");
+  container4Cards.innerHTML = "";
+  array.forEach((x) => {
+    container4Cards.innerHTML += `
+    <div class="card">
+        <div class="cardimage">
+          <img src="${x.photo}">
+        </div>
+        <div class="descriptioncontainercard">
+        <h3>${x.name}</h3>
+        <p>${x.description}
+        </p>
+        <div class="pricecard"> Price: $${x.pricex5}</div>
+        <button> 私を食べなさい</button>
+      </div>
+      </div>`;
+  });
 }
 
 //CODE BLOCK 2 END//
 
-
+//01:12, printer finished
 //01:06, get array
 //01:04, get response
 //01:01, 2nd commit of the day.
