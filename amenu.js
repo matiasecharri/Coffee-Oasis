@@ -42,11 +42,17 @@ async function dataApiConsumer() {
         return x.name.toLowerCase().includes(userText);
       });
       if (filteredData.length === 0) {
-        container4Cards.innerHTML = `This water tastes like crap`;
+        container4Cards.innerHTML = `<p class="text-focus-in" >Sorry, nothing to show! <br> 
+             表示するものは何もありません。<p>`;
       } else {
         printer(filteredData);
       }
     });
+    searchBar.addEventListener("input", (x=>{
+      if(x.target.value === ""){
+        printer(dataNipponBites)
+      }
+    }))
   }
   mySearchBar();
 }
