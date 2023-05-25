@@ -42,7 +42,7 @@ async function dataApiConsumer() {
         return x.name.toLowerCase().includes(userText);
       });
       if (filteredData.length === 0) {
-        container4Cards.innerHTML = `HOLA`;
+        container4Cards.innerHTML = `This water tastes like crap`;
       } else {
         printer(filteredData);
       }
