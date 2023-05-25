@@ -29,17 +29,28 @@ async function dataApiConsumer() {
   );
   let dataNipponBites = await dataNipponBitesResponse.json();
   printer(dataNipponBites);
-}
-//CODE BLOCK 3 SEARCHBAR//
+  //CODE BLOCK 3 SEARCHBAR//
 
-function mySearchBar(){
-console.log("hi from search")
+  function mySearchBar() {
+    let searchBar = document.getElementById("searchbar1");
+    let userText = "";
+
+    searchBar.addEventListener("keyup", (x) => {
+      userText = x.target.value.toLowerCase();
+      console.log(userText);
+      let filteredData = dataNipponBites.filter((x) => {
+        return x.name.toLowerCase().includes(userText);
+      });
+      console.log(filteredData);
+    });
+  }
+  mySearchBar();
 }
-mySearchBar()
-//CODE BLOCK 3 END//
+
+//SEARCHBAR END//
 dataApiConsumer();
 
-//CODE BLOCK 1 END//
+//ASYNC FUNCTION END//
 
 //CODE BLOCK 2 PRINTER//
 function printer(array) {
@@ -62,8 +73,8 @@ function printer(array) {
   });
 }
 
-//CODE BLOCK 2 END//
-
+//PRINTER END//
+//01:29, searchbar function
 //01:12, printer finished
 //01:06, get array
 //01:04, get response
