@@ -30,7 +30,15 @@ async function dataApiConsumer() {
   let dataNipponBites = await dataNipponBitesResponse.json();
   printer(dataNipponBites);
 }
+//CODE BLOCK 3 SEARCHBAR//
+
+function mySearchBar(){
+console.log("hi from search")
+}
+mySearchBar()
+//CODE BLOCK 3 END//
 dataApiConsumer();
+
 //CODE BLOCK 1 END//
 
 //CODE BLOCK 2 PRINTER//
