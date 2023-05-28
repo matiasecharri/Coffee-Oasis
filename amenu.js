@@ -37,7 +37,7 @@ consumeApi();
 
 function impresora(array) {
   let contenedorDeCards = document.getElementById("menumain");
-  contenedorDeCards.innerHTML = "";
+  contenedorDeCards.innerHTML = ""
   array.forEach((x) => {
     contenedorDeCards.innerHTML += `
 <div class="card">
