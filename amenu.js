@@ -12,6 +12,11 @@
 //-----------------------------------------------------------//
 //CONSUMIENDO API----------------// CODE BLOCK 1
 
+function dibellas(dibellas1, tipos, colores) {
+  return dibellas1 + tipos + colores;
+}
+console.log(dibellas("diana", " esquizofrenica", " marron"));
+console.log(dibellas("tutu", " olorosa", " blanca"));
 //CONSUMIENDO API END
 
 //Late Night Code; Started: 01:01, Finished 01:37 - Day 1/31
