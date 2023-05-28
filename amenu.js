@@ -12,11 +12,16 @@
 //-----------------------------------------------------------//
 //CONSUMIENDO API----------------// CODE BLOCK 1
 
-function dibellas(dibellas1, tipos, colores) {
-  return dibellas1 + tipos + colores;
+async function consumeApi() {
+  let datosDeInternet = await fetch(
+    "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
+  );
+
+  let datosProcesados = await datosDeInternet.json();
+
 }
-console.log(dibellas("diana", " esquizofrenica", " marron"));
-console.log(dibellas("tutu", " olorosa", " blanca"));
+consumeApi();
+
 //CONSUMIENDO API END
 
 //Late Night Code; Started: 01:01, Finished 01:37 - Day 1/31
