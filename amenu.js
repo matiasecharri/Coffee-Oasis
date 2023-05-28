@@ -13,14 +13,47 @@
 //CONSUMIENDO API----------------// CODE BLOCK 1
 
 async function consumeApi() {
+  //Es async porque traemos datos externos
+  let contenedorDeCards = document.getElementById("menumain");
+  contenedorDeCards.innerHTML = ` <div class="dot-spinner">
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+  <div class="dot-spinner__dot"></div>
+`;
   let datosDeInternet = await fetch(
     "https://my-json-server.typicode.com/matiasecharri/nippon-bites/products"
   );
 
   let datosProcesados = await datosDeInternet.json();
-
+  console.log(datosProcesados);
+  impresora(datosProcesados);
 }
 consumeApi();
+
+function impresora(array) {
+  let contenedorDeCards = document.getElementById("menumain");
+  contenedorDeCards.innerHTML = "";
+  array.forEach((x) => {
+    contenedorDeCards.innerHTML += `
+<div class="card">
+    <div class="cardimage">
+      <img src="${x.photo}">
+    </div>
+    <div class="descriptioncontainercard">
+    <h3>${x.name}</h3>
+    <p>${x.description}
+    </p>
+    <div class="pricecard"> Price: $${x.pricex5}</div>
+    <button> 私を食べなさい</button>
+  </div>
+  </div>`;
+  });
+}
 
 //CONSUMIENDO API END
 
