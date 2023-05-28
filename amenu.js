@@ -11,9 +11,8 @@
 //Another Wordpress day
 //-----------------------------------------------------------//
 //CONSUMIENDO API----------------// CODE BLOCK 1
-function sushiowo (){
 
-}
+//CONSUMIENDO API END
 
 //Late Night Code; Started: 01:01, Finished 01:37 - Day 1/31
 //FIXED GA4 CONVERSIONS!
