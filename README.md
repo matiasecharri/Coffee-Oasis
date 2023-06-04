@@ -1,4 +1,4 @@
-# Nippon-Bites
+# nippon-bites
 An e-commerce about sushi delivery food.
 Made with: html5, css3, javascript vanilla and
 bootstrap.
