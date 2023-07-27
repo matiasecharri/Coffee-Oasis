@@ -107,7 +107,7 @@ header {
 .photo1 {
   width: 70%;
   height: 75vh;
-  background-color: black;
+
   background-image: url(./images/let-us-have-sushi-as--instead-wallpaper.webp);
   background-size: cover;
   border-radius: 1px;
@@ -115,7 +115,6 @@ header {
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
   border-radius: 8px;
-  
 }
 .photo2 {
   width: 20%;
