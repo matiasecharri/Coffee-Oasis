@@ -83,13 +83,8 @@ function printer(array) {
   });
 }
 
-//Late Night Code; Started: 01:01, Finished 01:37 - Day 1/31
-//FIXED GA4 CONVERSIONS!
-//-2000
-//FIxy
-//Saturday --
-//Tuesday Bamboo Plumbing
-//RIP M1
+//Day 14.9) Working day my friend
+
 //FIN IMPRESORA---------------//
 
 ///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
