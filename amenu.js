@@ -70,7 +70,7 @@ function printer(array) {
     containerCards.innerHTML += `
 <div class="card">
     <div class="cardimage">
-      <img src="${x.photo}">
+      <img src="${x.photo}" alt="${x.name}">
     </div>
     <div class="descriptioncontainercard">
     <h3>${x.name}</h3>
@@ -136,3 +136,4 @@ function printer(array) {
 
 // let buttonSalads = document.getElementById("salad");
 // buttonSalads.addEventListener("click", onlySalads);
+

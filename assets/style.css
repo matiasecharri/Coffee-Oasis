@@ -107,14 +107,14 @@ header {
 .photo1 {
   width: 70%;
   height: 75vh;
-  background-color: black;
-  background-image: url(./images/let-us-have-sushi-as--instead-wallpaper.jpg);
+  background-color: rgb(197, 21, 44);
+  background-image: url(./images/let-us-have-sushi-as--instead-wallpaper.webp);
   background-size: cover;
   border-radius: 1px;
   background-position: 15%;
   box-shadow: rgb(35, 36, 36) 0px 20px 30px -10px;
   filter: brightness(80%);
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
 }
 .photo2 {
   width: 20%;
@@ -616,7 +616,6 @@ main {
   font-weight: 800;
   margin-top: 80px;
   text-align: center;
-  
 }
 
 @media only screen and (max-width: 1460px) {
@@ -1176,8 +1175,19 @@ aside {
   flex-direction: column;
   display: flex;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  animation: ease-in-out;
 }
 
+.card:hover {
+  box-shadow: rgba(5, 5, 10, 0.154) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.084) 0px 8px 16px -8px;
+  transition-duration: 0.5s;
+}
+
+.card:not(:hover) {
+  box-shadow: rgba(40, 40, 45, 0.2) 0px 7px 29px 0px;
+  transition-duration: 1.5s;
+}
 .cardimage {
   height: 200px;
   border-radius: 5px 5px 5px 5px;
@@ -1451,6 +1461,18 @@ input {
   /* -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%) */
   border-radius: 5px;
+  animation: ease-in-out;
+}
+
+.custom-button img:hover {
+  transition-duration: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.custom-button img:not(:hover) {
+  transition-duration: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.157) 0px 25px 50px -12px;
 }
 
 .custom-button span {
@@ -1937,7 +1959,7 @@ input {
 
 .slider-frame img {
   width: 100%;
-  height:10vh;
+  height: 10vh;
   object-fit: cover;
   filter: brightness(70%) grayscale(100%) opacity(100%);
 
@@ -1967,13 +1989,9 @@ input {
   }
 }
 
-.hiddentitle{
+.hiddentitle {
   font-size: 0px;
   color: #287df400;
   position: absolute;
   z-index: -10;
 }
-
-
-
-
