@@ -10,6 +10,26 @@
 // 4: Inicializar la funcion asincrona.
 //Another Wordpress day
 //-----------------------------------------------------------//
+//IMPRESORA-------------------// CODE ssBLOCK 3
+function printer(array) {
+  let containerCards = document.getElementById("menumain");
+  containerCards.innerHTML = "";
+  array.forEach(x => {
+    containerCards.innerHTML += `
+<div class="card">
+    <div class="cardimage">
+      <img src="${x.photo}" alt="${x.name}">
+    </div>
+    <div class="descriptioncontainercard">
+    <h3>${x.name}</h3>
+    <p>${x.description}
+    </p>
+    <div class="pricecard"> Price: $${x.pricex5}</div>
+    <button> 私を食べなさい</button>
+  </div>
+  </div>`;
+  });
+}
 //CONSUMIENDO API----------------// CODE BLOCK 1
 async function consumiendoApi() {
   let containerCards = document.getElementById("menumain");
@@ -34,10 +54,10 @@ async function consumiendoApi() {
     //Declaro mi funcion simplemente para mantener organizado el código.
     let userTextFilter = ""; // Creo una variable vacía donde posteriormente voy a guardar lo que escriba el usuario.
     let searchbar = document.getElementById("searchbar1"); // Declaro una variable donde voy a traer mi searchbar.
-    searchbar.addEventListener("keyup", (x) => {
+    searchbar.addEventListener("keyup", x => {
       // Necesito que la searchbar responda a lo que se escribe asi que, addEventListener("keyup").
       userTextFilter = x.target.value.toLowerCase(); // Le voy a decir que userTextFiltered va a ser igual al valor en tiempo real que tenga X o sea mi searchbar.
-      let datosFiltrados = datosNipponBites.filter((x) => {
+      let datosFiltrados = datosNipponBites.filter(x => {
         // Voy a crear una variable donde se van a guardar los datos que filtre el usuario al escribir.
         return x.name.toLowerCase().includes(userTextFilter); // Le voy a pedir que me retorne x.name(de mi array nippon) pero solo si incluye lo que el user escribió.
       });
@@ -50,7 +70,7 @@ async function consumiendoApi() {
         printer(datosFiltrados); //En cambio si hay coincidencia quiero que me muestre los datos filtrados.
       }
     });
-    searchbar.addEventListener("input", (x) => {
+    searchbar.addEventListener("input", x => {
       //Ademas tuve que agregar un addEventListener extra para que cuando el valor de la searchbar sea de ""
       if (searchbar.value === "") {
         //Es decir para cuando el usuario no escribió nada.
@@ -62,78 +82,5 @@ async function consumiendoApi() {
   //FIN SEARCHBAR-------------//
 }
 consumiendoApi();
-//IMPRESORA-------------------// CODE ssBLOCK 3
-function printer(array) {
-  let containerCards = document.getElementById("menumain");
-  containerCards.innerHTML = "";
-  array.forEach((x) => {
-    containerCards.innerHTML += `
-<div class="card">
-    <div class="cardimage">
-      <img src="${x.photo}" alt="${x.name}">
-    </div>
-    <div class="descriptioncontainercard">
-    <h3>${x.name}</h3>
-    <p>${x.description}
-    </p>
-    <div class="pricecard"> Price: $${x.pricex5}</div>
-    <button> 私を食べなさい</button>
-  </div>
-  </div>`;
-  });
-}
 
 //Day 14.9) Working day my friend
-
-//FIN IMPRESORA---------------//
-
-///BOTONES, NO AGREGAR HASTA NO ENTTENDER BIEN EL FILTRO:
-
-// let isFilterActive = false;
-
-// function onlyRolls() {
-//   if (isFilterActive) {
-//     printer(datosNipponBites);
-//     isFilterActive = false;
-//   } else {
-//     let filteredRolls = datosNipponBites.filter((x) => {
-//       return x.categorie === "roll";
-//     });
-//     printer(filteredRolls);
-//     isFilterActive = true;
-//   }
-// }
-// let buttonRoll = document.getElementById("rolls");
-// buttonRoll.addEventListener("click", onlyRolls);
-
-// function onlyGourmet() {
-//   if (isFilterActive) {
-//     printer(datosNipponBites);
-//     isFilterActive = false;
-//   } else {
-//     let filteredGourmet = datosNipponBites.filter((x) => {
-//       return x.categorie === "gourmet";
-//     });
-//     printer(filteredGourmet);
-//     isFilterActive = true;
-//   }
-// }
-// let buttonGourmet = document.getElementById("gourmet");
-// buttonGourmet.addEventListener("click", onlyGourmet);
-
-// function onlySalads() {
-//   if (isFilterActive) {
-//     printer(datosNipponBites);
-//     isFilterActive = false;
-//   } else {
-//     let filteredSalads = datosNipponBites.filter((x) => {
-//       return x.categorie === "salad";
-//     });
-//     printer(filteredSalads);
-//     isFilterActive = true;
-//   }
-// }
-
-// let buttonSalads = document.getElementById("salad");
-// buttonSalads.addEventListener("click", onlySalads);
-
