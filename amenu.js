@@ -21,8 +21,8 @@ function printer(array) {
       <img src="${x.photo}" alt="${x.name}">
     </div>
     <div class="descriptioncontainercard">
-    <h3>${x.name}</h3>
-    <p>${x.description}
+    <h3 translate="no">${x.name}</h3>
+    <p translate="no">${x.description}
     </p>
     <div class="pricecard"> Price: $${x.pricex5}</div>
     <button> 私を食べなさい</button>
