@@ -17,7 +17,7 @@ $misDivs.forEach(div => {
     window.location.href = "https://nippon-bites.vercel.app/menu.html";
   });
 });
-//
+
 // Selecciona el elemento que deseas animar
 const animatedElement = document.querySelector(".animado");
 
