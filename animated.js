@@ -2,13 +2,21 @@ console.log("Nipon Bites fue diseñado y codeado por Matias Echarri");
 console.log("Nipon Bites was designed and coded by Matias Echarri");
 console.log("https://github.com/matiasecharri");
 
+//AKIRAAAAAAAAA, NO! LEAVE ME ALONE!!!
 //// Esto es para aplicarle link a las imagenes triangulares, nada más que eso jaja, no me acuerdo que problema tenia que no funcionaba
-let misDivs = document.getElementsByClassName("mi-clase");
-for (let i = 0; i < misDivs.length; i++) {
-  misDivs[i].addEventListener("click", function () {
+// let misDivs = document.getElementsByClassName("mi-clase");
+// for (let i = 0; i < misDivs.length; i++) {
+//   misDivs[i].addEventListener("click", function (event) {
+//     window.location.href = "https://nippon-bites.vercel.app/menu.html";
+//   });
+// }
+
+const $misDivs = document.querySelectorAll(".mi-clase");
+$misDivs.forEach(div => {
+  div.addEventListener("click", event => {
     window.location.href = "https://nippon-bites.vercel.app/menu.html";
   });
-}
+});
 
 // Selecciona el elemento que deseas animar
 const animatedElement = document.querySelector(".animado");
@@ -23,7 +31,7 @@ const observer = new IntersectionObserver(function (entries) {
   }
 });
 
-// Comienza a observar el elemento
+// Comienza a observar el elemento ???? OBSERVA DESDE QUE CARGA!!!
 observer.observe(animatedElement);
 
 const animatedElement2 = document.querySelector(".animado2");
@@ -34,7 +42,7 @@ const observer2 = new IntersectionObserver(function (entries) {
   if (entries[0].isIntersecting) {
     setTimeout(() => {
       animatedElement2.classList.add("h5koi");
-    }, 1500); // Retrasa la animación 2 segundos
+    }, 1500); // Retrasa la animación 1.5* segundos
   }
 });
 // Comienza a observar el elemento
