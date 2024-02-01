@@ -1,20 +1,11 @@
 console.log("Nipon Bites fue diseñado y codeado por Matias Echarri");
 console.log("Nipon Bites was designed and coded by Matias Echarri");
 console.log("https://github.com/matiasecharri");
-
-//AKIRAAAAAAAAA, NO! LEAVE ME ALONE!!!
-//// Esto es para aplicarle link a las imagenes triangulares, nada más que eso jaja, no me acuerdo que problema tenia que no funcionaba
-// let misDivs = document.getElementsByClassName("mi-clase");
-// for (let i = 0; i < misDivs.length; i++) {
-//   misDivs[i].addEventListener("click", function (event) {
-//     window.location.href = "https://nippon-bites.vercel.app/menu.html";
-//   });
-// }
-
 const $misDivs = document.querySelectorAll(".mi-clase");
+
 $misDivs.forEach(div => {
   div.addEventListener("click", event => {
-    window.location.href = "https://nippon-bites.vercel.app/menu.html";
+    window.location.href = "/menu.html";
   });
 });
 

@@ -198,6 +198,7 @@ h1 span {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .thedoubletext h3 {
@@ -402,6 +403,13 @@ h1 span {
 
   .thedoubletext h3 {
     display: none;
+  }
+
+  .cta-button {
+    margin-bottom: 30px;
+    right: -20px !important;
+    width: 150px;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -917,7 +925,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-position: 70px -900px;
+  background-position: 80px -900px;
   background-size: contain;
   filter: grayscale(90%);
   clip-path: polygon(100% 0, 0 0, 100% 100%);
@@ -1994,4 +2002,60 @@ input {
   color: #287df400;
   position: absolute;
   z-index: -10;
+}
+
+.cta-button {
+  position: absolute;
+  text-decoration: none;
+  background-color: #0000005e;
+  color: #f8f8f8;
+  padding: 10px 20px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  bottom: -60px;
+  right: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.468);
+  font-weight: 100;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.cta-button::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: rgba(205, 185, 185, 0);
+  top: 20px;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  border-radius: 300px;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  -ms-border-radius: 300px;
+  -o-border-radius: 300px;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+.cta-button:hover::after {
+  background-color: rgb(242, 234, 234);
+  transition: 0.4s ease-in-out;
+  transform: translateX(-140px);
+  -webkit-transform: translateX(-140px);
+  -moz-transform: translateX(-140px);
+  -ms-transform: translateX(-140px);
+  -o-transform: translateX(-140px);
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
 }
